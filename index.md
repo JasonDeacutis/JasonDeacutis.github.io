@@ -1,8 +1,7 @@
-# Portfolio
-
 ## [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
-### Physics Vehicle AI Pathfinding & Control
+### Vehicle Driver AI
+Integrated AI into our physics vehicle controller, allowing vehicles to autonomously navigate to a destination while avoiding obstacles.
 {% include embed-youtube.html id="Yss-8LuLG_k" %}
 {% include embed-youtube.html id="bV-npNsO1-w" %}
 
@@ -14,7 +13,14 @@ All in-game reticles are based on firsthand sources (which are difficult to find
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
 
+# ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
+*Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
+## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
+![Chernarus](content/CUP/chernarus.png)
+## Vehicles
+
 # Personal Projects
 ## Minecraft Clone
-![Sunset](content/MC-sunset.png)
+*1-month sprint to see how far I could get recreating [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia"). I was able to implement dynamic voxels and infinite terrain.*
+[![Sunset](content/MC-sunset.png)](content/MC-sunset.png "Enlarge")
 ## [WebGL Demo](WebGL\index.html)
