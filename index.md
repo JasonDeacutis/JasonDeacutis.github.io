@@ -1,12 +1,11 @@
+
 # Welcome to StackEdit!
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
 
-Embed Test:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kvQDc_CfAFo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+### Embed Test
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kvQDc_CfAFo?rel=0&modestbranding=1" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Files
 
