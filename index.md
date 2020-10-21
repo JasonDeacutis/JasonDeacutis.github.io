@@ -1,6 +1,4 @@
 # Portfolio
-Embed Test 4
-{% include embed-youtube.html id="kvQDc_CfAFo" %}
 
 ## [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
