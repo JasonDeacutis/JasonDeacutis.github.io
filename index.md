@@ -11,12 +11,10 @@ Procedural crosshairs integrated with the ballistics system, allowing projectile
 All in-game reticles are based on firsthand sources (which are difficult to find).
 
 ### Day-Night Cycle
-Realtime sky simulation, based on a simplified solar system model.
-Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").
-The moon is also simulated as a light source & brightness is affected by phase.
+Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kvQDc_CfAFo?rel=0&modestbranding=1" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Personal Projects
 ## Minecraft Clone
-
+![Sunset](content/MC-sunset.png)
 ## [WebGL Demo](WebGL\index.html)
