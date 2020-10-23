@@ -9,6 +9,10 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ### Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
+#### Stadia
+[Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows easily determining the distance of a target based on its apparent size.<br>
+*[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meters distance increments*<br>
+[![Stadia](content\GHPC\stadia_small.png)](content\GHPC\stadia_full.png "Enlarge")
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
@@ -22,6 +26,6 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 
 # Personal Projects
 ## Minecraft Clone
-*1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br><br>
+*1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br>
 [![Sunset](content/MC-sunset.png)](content/MC-sunset.png "Enlarge")
 ## [WebGL Demo](WebGL\index.html)
