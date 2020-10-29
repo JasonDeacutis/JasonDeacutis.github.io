@@ -35,8 +35,8 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 
 ### Thermal Imaging (FLIR)
 [![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
-{% include compare.html a="content\GHPC\FLIR\vehicles_visible.png" b="content\GHPC\FLIR\vehicles_FLIR.png" labelA="Visible" labelB="FLIR" %}
-{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" %}
+{% include compare.html a="content\GHPC\FLIR\vehicles_visible.png" b="content\GHPC\FLIR\vehicles_FLIR.png" labelA="Visible" labelB="FLIR" orientation="horizontal" %}
+{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
@@ -48,7 +48,7 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
 [![Chernarus](content/CUP/chernarus.png)](content/CUP/chernarus_full.png "Enlarge")
-{% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" %}
+{% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" orientation="horizontal" %}
 ## Vehicles
 
 # Personal Projects
