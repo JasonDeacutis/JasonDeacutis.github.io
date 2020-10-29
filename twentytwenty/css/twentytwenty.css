@@ -75,6 +75,7 @@
   margin-left: -6px; }
 
 .twentytwenty-container {
+  min-height: 200px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;

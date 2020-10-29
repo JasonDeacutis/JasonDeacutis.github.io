@@ -1,8 +1,6 @@
 Jason Deacutis<br>
 jasondeacutis@gmail.com
 
-{% include compare.html %}
-
 ## [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
 ### Vehicle Driver AI
@@ -29,6 +27,7 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
 [![Chernarus](content/CUP/chernarus.png)](content/CUP/chernarus_full.png "Enlarge")
+{% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" %}
 ## Vehicles
 
 # Personal Projects
