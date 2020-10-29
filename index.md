@@ -11,16 +11,19 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ### Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
-[![Reticles](content\GHPC\reticles_small.png)](content\GHPC\reticles_full.png "Enlarge")
-#### Stadia
+[![Reticles](content\GHPC\Reticles\reticles_small.png)](content\GHPC\Reticles\reticles_full.png "Enlarge")
+
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
 *[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
-[![Stadia](content\GHPC\stadia_small.png)](content\GHPC\stadia_full.png "Enlarge")
+[![Stadia](content\GHPC\Reticles\stadia_small.png)](content\GHPC\Reticles\stadia_full.png "Enlarge")
+
+### Thermal Imaging (FLIR)
+[![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
-[![Moon Phases](content\GHPC\sunpath_small.png)](content\GHPC\sunpath_full.png "Enlarge")
-[![Moon Phases](content\GHPC\moon2.gif)](content\GHPC\moon2.gif "Enlarge")
+[![Moon Phases](content\GHPC\Sky\sunpath_small.png)](content\GHPC\Sky\sunpath_full.png "Enlarge")
+[![Moon Phases](content\GHPC\Sky\moon2.gif)](content\GHPC\Sky\moon2.gif "Enlarge")
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
