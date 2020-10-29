@@ -7,12 +7,9 @@
 	<script src="twentytwenty/js/jquery.event.move.js"></script>
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
 	<script>
-		$(function(){
+		$(window).on('load', function() {
 		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5, move_with_handle_only:0, click_to_move:1});
 		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
-		});
-		$(window).on('load', function() {
-			$(window).trigger("resize.twentytwenty");
 		});
 	</script>
 </head>
