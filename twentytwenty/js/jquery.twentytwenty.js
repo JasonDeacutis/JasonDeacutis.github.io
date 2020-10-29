@@ -19,7 +19,7 @@
       var sliderPct = container.attr('pos');
 	  
 	  if (orientation == undefined || orientation != "vertical") orientation = "horizontal";
-	  if (sliderPct == undefined) sliderPct = 0.5;
+	  if (sliderPct == undefined || sliderPct == "") sliderPct = 0.5;
 	  
       var beforeDirection = (orientation === 'vertical') ? 'down' : 'left';
       var afterDirection = (orientation === 'vertical') ? 'up' : 'right';
