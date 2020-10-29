@@ -4,8 +4,6 @@
     var options = $.extend({
       default_offset_pct: 0.5,
       orientation: 'horizontal',
-      before_label: 'Before',
-      after_label: 'After',
       no_overlay: false,
       move_slider_on_hover: false,
       move_with_handle_only: true,
@@ -19,17 +17,18 @@
       var sliderOrientation = options.orientation;
       var beforeDirection = (sliderOrientation === 'vertical') ? 'down' : 'left';
       var afterDirection = (sliderOrientation === 'vertical') ? 'up' : 'right';
-
+	
+      var beforeImg = container.find("img:first");
+      var afterImg = container.find("img:last");
 
       container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + sliderOrientation + "'></div>");
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
         var overlay = container.find(".twentytwenty-overlay");
-        overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
-        overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
+        overlay.append("<div class='twentytwenty-before-label' data-content='"+beforeImg.attr('label')+"'></div>");
+        overlay.append("<div class='twentytwenty-after-label' data-content='"+afterImg.attr('label')+"'></div>");
       }
-      var beforeImg = container.find("img:first");
-      var afterImg = container.find("img:last");
+      
       container.append("<div class='twentytwenty-handle'></div>");
       var slider = container.find(".twentytwenty-handle");
       slider.append("<span class='twentytwenty-" + beforeDirection + "-arrow'></span>");
