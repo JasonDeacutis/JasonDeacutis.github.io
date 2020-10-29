@@ -1,3 +1,23 @@
+<head>
+	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
+	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+	<script src="twentytwenty/js/jquery.event.move.js"></script>
+	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
+	<script>
+		$(function() {
+		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
+		});
+		$(window).on('load', function() {
+		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
+		});
+	</script>
+</head>
+
 Jason Deacutis<br>
 jasondeacutis@gmail.com
 
