@@ -58,6 +58,7 @@
           beforeImg.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
           afterImg.css("clip", "rect(0,"+offset.w+","+offset.h+","+offset.cw+")");
     	}
+		container.css("width", offset.w);
         container.css("height", offset.h);
       };
 
@@ -101,7 +102,7 @@
         offsetX = container.offset().left;
         offsetY = container.offset().top;
         imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();          
+        imgHeight = beforeImg.height();
       };
       var onMove = function(e) {
         if (container.hasClass("active")) {
