@@ -2,44 +2,45 @@
 
   $.fn.twentytwenty = function(options) {
     var options = $.extend({
-      default_offset_pct: 0.5,
-      orientation: 'horizontal',
-      no_overlay: false,
       move_slider_on_hover: false,
       move_with_handle_only: true,
       click_to_move: false
     }, options);
 
     return this.each(function() {
-
-      var sliderPct = options.default_offset_pct;
       var container = $(this);
-      var sliderOrientation = container.attr('orientation');
-      var beforeDirection = (sliderOrientation === 'vertical') ? 'down' : 'left';
-      var afterDirection = (sliderOrientation === 'vertical') ? 'up' : 'right';
+	  
+	  var imgA = container.find("img:first");
+      var imgB = container.find("img:last");
+	  var labelA = imgA.attr('label');
+	  var labelB = imgB.attr('label');
+	  
+      var orientation = container.attr('orientation');
+      var sliderPct = container.attr('pos');
+	  
+	  if (orientation == undefined || orientation != "vertical") orientation = "horizontal";
+	  if (sliderPct == undefined) sliderPct = 0.5;
+	  
+      var beforeDirection = (orientation === 'vertical') ? 'down' : 'left';
+      var afterDirection = (orientation === 'vertical') ? 'up' : 'right';
 	
-      var beforeImg = container.find("img:first");
-      var afterImg = container.find("img:last");
-
-      container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + sliderOrientation + "'></div>");
-      if(!options.no_overlay) {
-        container.append("<div class='twentytwenty-overlay'></div>");
-        var overlay = container.find(".twentytwenty-overlay");
-        overlay.append("<div class='twentytwenty-before-label' data-content='"+beforeImg.attr('label')+"'></div>");
-        overlay.append("<div class='twentytwenty-after-label' data-content='"+afterImg.attr('label')+"'></div>");
-      }
+      container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + orientation + "'></div>");
+      container.append("<div class='twentytwenty-overlay'></div>");
+      var overlay = container.find(".twentytwenty-overlay");
+      if (labelA != undefined) overlay.append("<div class='twentytwenty-before-label' data-content='"+labelA+"'></div>");
+      if (labelB != undefined) overlay.append("<div class='twentytwenty-after-label' data-content='"+labelB+"'></div>");
       
       container.append("<div class='twentytwenty-handle'></div>");
       var slider = container.find(".twentytwenty-handle");
       slider.append("<span class='twentytwenty-" + beforeDirection + "-arrow'></span>");
       slider.append("<span class='twentytwenty-" + afterDirection + "-arrow'></span>");
       container.addClass("twentytwenty-container");
-      beforeImg.addClass("twentytwenty-before");
-      afterImg.addClass("twentytwenty-after");
+      imgA.addClass("twentytwenty-before");
+      imgB.addClass("twentytwenty-after");
       
       var calcOffset = function(dimensionPct) {
-        var w = beforeImg.width();
-        var h = beforeImg.height();
+        var w = imgA.width();
+        var h = imgA.height();
         return {
           w: w+"px",
           h: h+"px",
@@ -49,13 +50,13 @@
       };
 
       var adjustContainer = function(offset) {
-      	if (sliderOrientation === 'vertical') {
-          beforeImg.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");
-          afterImg.css("clip", "rect("+offset.ch+","+offset.w+","+offset.h+",0)");
+      	if (orientation === 'vertical') {
+          imgA.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");
+          imgB.css("clip", "rect("+offset.ch+","+offset.w+","+offset.h+",0)");
       	}
       	else {
-          beforeImg.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
-          afterImg.css("clip", "rect(0,"+offset.w+","+offset.h+","+offset.cw+")");
+          imgA.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
+          imgB.css("clip", "rect(0,"+offset.w+","+offset.h+","+offset.cw+")");
     	}
 		container.css("width", offset.w);
         container.css("height", offset.h);
@@ -63,7 +64,7 @@
 
       var adjustSlider = function(pct) {
         var offset = calcOffset(pct);
-        slider.css((sliderOrientation==="vertical") ? "top" : "left", (sliderOrientation==="vertical") ? offset.ch : offset.cw);
+        slider.css((orientation==="vertical") ? "top" : "left", (orientation==="vertical") ? offset.ch : offset.cw);
         adjustContainer(offset);
       };
 
@@ -74,7 +75,7 @@
 
       // Calculate the slider percentage based on the position.
       var getSliderPercentage = function(positionX, positionY) {
-        var sliderPercentage = (sliderOrientation === 'vertical') ?
+        var sliderPercentage = (orientation === 'vertical') ?
           (positionY-offsetY)/imgHeight :
           (positionX-offsetX)/imgWidth;
 
@@ -91,17 +92,17 @@
       var imgWidth = 0;
       var imgHeight = 0;
       var onMoveStart = function(e) {
-        if (((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) && sliderOrientation !== 'vertical') {
+        if (((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) && orientation !== 'vertical') {
           e.preventDefault();
         }
-        else if (((e.distX < e.distY && e.distX < -e.distY) || (e.distX > e.distY && e.distX > -e.distY)) && sliderOrientation === 'vertical') {
+        else if (((e.distX < e.distY && e.distX < -e.distY) || (e.distX > e.distY && e.distX > -e.distY)) && orientation === 'vertical') {
           e.preventDefault();
         }
         container.addClass("active");
         offsetX = container.offset().left;
         offsetY = container.offset().top;
-        imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();
+        imgWidth = imgA.width(); 
+        imgHeight = imgA.height();
       };
       var onMove = function(e) {
         if (container.hasClass("active")) {
@@ -136,8 +137,8 @@
         container.on('click', function(e) {
           offsetX = container.offset().left;
           offsetY = container.offset().top;
-          imgWidth = beforeImg.width();
-          imgHeight = beforeImg.height();
+          imgWidth = imgA.width();
+          imgHeight = imgA.height();
 
           sliderPct = getSliderPercentage(e.pageX, e.pageY);
           adjustSlider(sliderPct);

@@ -8,7 +8,7 @@
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
 	<script>
 		$(window).on('load', function() {
-		  $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5, move_with_handle_only:0, click_to_move:1});
+		  $(".twentytwenty-container").twentytwenty({move_with_handle_only:0, click_to_move:1});
 		});
 	</script>
 </head>
@@ -34,7 +34,7 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 
 ### Thermal Imaging (FLIR)
 [![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
-{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="horizontal" %}
+{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
 {% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
 
 ### Day-Night Cycle
@@ -47,7 +47,7 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
 [![Chernarus](content/CUP/chernarus_small.jpg)](content/CUP/chernarus.png "Enlarge")
-{% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" orientation="horizontal" %}
+{% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" %}
 ## Vehicles
 
 # Personal Projects
