@@ -12,7 +12,7 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
 [![Reticles](content\GHPC\Reticles\reticles_small.png)](content\GHPC\Reticles\reticles_full.png "Enlarge")
-#### Stadia
+
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
 *[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
 [![Stadia](content\GHPC\Reticles\stadia_small.png)](content\GHPC\Reticles\stadia_full.png "Enlarge")
