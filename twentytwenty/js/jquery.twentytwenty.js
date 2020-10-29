@@ -14,7 +14,7 @@
 
       var sliderPct = options.default_offset_pct;
       var container = $(this);
-      var sliderOrientation = options.orientation;
+      var sliderOrientation = container.attr('orientation');
       var beforeDirection = (sliderOrientation === 'vertical') ? 'down' : 'left';
       var afterDirection = (sliderOrientation === 'vertical') ? 'up' : 'right';
 	
