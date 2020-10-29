@@ -1,3 +1,19 @@
+<head>
+	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
+	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+			  crossorigin="anonymous"></script>
+	<script src="twentytwenty/js/jquery.event.move.js"></script>
+	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
+	<script>
+		$(window).on('load', function() {
+		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5, move_with_handle_only:0, click_to_move:1});
+		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+		});
+	</script>
+</head>
+
 Jason Deacutis<br>
 jasondeacutis@gmail.com
 
@@ -19,8 +35,8 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 
 ### Thermal Imaging (FLIR)
 [![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
-{% include compare.html a="content\GHPC\FLIR\vehicles_visible.png" b="content\GHPC\FLIR\vehicles_FLIR.png" orientation=horizontal %}
-{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" orientation=vertical %}
+{% include compare.html a="content\GHPC\FLIR\vehicles_visible.png" b="content\GHPC\FLIR\vehicles_FLIR.png" %}
+{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" %}
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
