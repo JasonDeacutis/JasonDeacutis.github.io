@@ -26,7 +26,7 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
-[![Chernarus](content/CUP/chernarus.png)](content/CUP/chernarus.png "Enlarge")
+[![Chernarus](content/CUP/chernarus.png)](content/CUP/chernarus_full.png "Enlarge")
 ## Vehicles
 
 # Personal Projects
