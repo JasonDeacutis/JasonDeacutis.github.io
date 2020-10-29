@@ -33,10 +33,18 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 [![Stadia](content\GHPC\Reticles\stadia_small.jpg)](content\GHPC\Reticles\stadia.png "Enlarge")
 
 ### Thermal Imaging (FLIR)
+Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
+Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
+Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
+
 [![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
+[M60A3 TTS](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia")'s FLIR gunsight spotting [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")s.
+
 {% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
-A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some *appear* colder than others, demonstrating surface materials reflect IR differently.
+Visible light vs FLIR. Notice one vehicle's engine ([T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")) has been running for a while, and the sky appears darker.
+
 {% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
+A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some *appear* colder than others, demonstrating surface materials reflect IR differently.
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
