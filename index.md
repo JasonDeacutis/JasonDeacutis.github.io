@@ -8,8 +8,8 @@
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
 	<script>
 		$(window).on('load', function() {
-		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
-		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical'});
+		  $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5, move_with_handle_only:0, click_to_move:1});
+		  $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.5, orientation: 'vertical', move_with_handle_only:0, click_to_move:1});
 		});
 	</script>
 </head>
