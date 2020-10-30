@@ -70,7 +70,7 @@ Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulati
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
-{% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117_small.jpg" link_src="content\Art\an-prc-117.png" %}
+{% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117g_small.jpg" link_src="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
 {% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
 ### Earth
