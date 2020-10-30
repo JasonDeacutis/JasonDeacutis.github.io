@@ -64,7 +64,14 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 *1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br>
 [![Sunset](content/MC-sunset.jpg)](content/MC-sunset.png "Enlarge")
 
-## 3D Art
-[![Orbit](content\Art\orbit.gif)](content\Art\orbit.gif "Enlarge")
-
 ## [WebGL Demo](WebGL\index.html)
+
+# 3D Art
+### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
+[![AN-PRC-117G](content\Art\an-prc-117_small.jpg)](content\Art\an-prc-117.png "Enlarge")
+### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
+[![World Machine](content\Art\WM_small.jpg)](content\Art\WM.jpg "Enlarge")
+### Earth
+{% include image.html alt="Earth" src="content\Art\earth_small.jpg" link_src="content\Art\earth.jpg" %}
+### Retro Vector Satellite
+{% include image.html alt="Orbit" src="content\Art\orbit.gif" link_src="content\Art\orbit.gif" %}
