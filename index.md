@@ -63,7 +63,9 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 ## Minecraft Clone
 *1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br>
 {% include image.html alt="Sunset" src="content/MC-sunset.jpg" link_src="content/MC-sunset.png" %}
-
+## N-Body Gravity Physics
+{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
+Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations.
 ## [WebGL Demo](WebGL\index.html)
 
 # 3D Art
