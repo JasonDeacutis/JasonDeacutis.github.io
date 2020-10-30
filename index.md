@@ -63,4 +63,8 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 ## Minecraft Clone
 *1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br>
 [![Sunset](content/MC-sunset.jpg)](content/MC-sunset.png "Enlarge")
+
+## 3D Art
+[![Orbit](content\Art\orbit.gif)](content\Art\orbit.gif "Enlarge")
+
 ## [WebGL Demo](WebGL\index.html)
