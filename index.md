@@ -26,18 +26,18 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ### Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
-[![Reticles](content\GHPC\Reticles\reticles_small.jpg)](content\GHPC\Reticles\reticles.png "Enlarge")
+{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
 *[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
-[![Stadia](content\GHPC\Reticles\stadia_small.jpg)](content\GHPC\Reticles\stadia.png "Enlarge")
+{% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" %}
 
 ### Thermal Imaging (FLIR)
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
 Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
-[![FLIR](content\GHPC\FLIR\TTS_small.png)](content\GHPC\FLIR\TTS.png "Enlarge")
+{% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" %}
 [M60A3 TTS](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia")'s FLIR gunsight spotting [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")s.
 
 {% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
@@ -48,29 +48,29 @@ A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where al
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
-[![Moon Phases](content\GHPC\Sky\sunpath_small.jpg)](content\GHPC\Sky\sunpath.png "Enlarge")
-[![Moon Phases](content\GHPC\Sky\moon2.gif)](content\GHPC\Sky\moon2.gif "Enlarge")
+{% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
+{% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
-[![Chernarus](content/CUP/chernarus_small.jpg)](content/CUP/chernarus.png "Enlarge")
+{% include image.html alt="Chernarus" src="content/CUP/chernarus_small.jpg" link_src="content/CUP/chernarus.png" %}
 {% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" %}
 ## Vehicles
 
 # Personal Projects
 ## Minecraft Clone
 *1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.*<br>
-[![Sunset](content/MC-sunset.jpg)](content/MC-sunset.png "Enlarge")
+{% include image.html alt="Sunset" src="content/MC-sunset.jpg" link_src="content/MC-sunset.png" %}
 
 ## [WebGL Demo](WebGL\index.html)
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
-[![AN-PRC-117G](content\Art\an-prc-117_small.jpg)](content\Art\an-prc-117.png "Enlarge")
+{% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117_small.jpg" link_src="content\Art\an-prc-117.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
-[![World Machine](content\Art\WM_small.jpg)](content\Art\WM.jpg "Enlarge")
+{% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
 ### Earth
 {% include image.html alt="Earth" src="content\Art\earth_small.jpg" link_src="content\Art\earth.jpg" %}
 ### Retro Vector Satellite
