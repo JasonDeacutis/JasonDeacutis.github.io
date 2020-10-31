@@ -57,7 +57,12 @@ Realtime sky simulation, based on a simplified solar system model.<br>Includes s
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
 {% include image.html alt="Chernarus" src="content/CUP/chernarus_small.jpg" link_src="content/CUP/chernarus.png" %}
 {% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" %}
-## Vehicles
+## Blender Material Tool
+Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for Blender.
+{% include image.html alt="Barracks" src="content/CUP/barracks.jpg" link_src="content/CUP/barracks.jpg" %}
+{% include image.html alt="RVMAT Nodes" src="content/CUP/rvmat.jpg" link_src="content/CUP/rvmat.png" %}
+ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This drastically reduces the amount of work the CPU needs to do (drawcalls), especially when there are hundreds of models on screen.
+{% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" %}
 
 # Personal Projects
 ## Minecraft Clone
