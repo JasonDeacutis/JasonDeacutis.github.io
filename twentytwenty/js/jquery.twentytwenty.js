@@ -10,6 +10,9 @@
     return this.each(function() {
       var container = $(this);
 	  
+	  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	  if (isMobile && !move_with_handle_only) move_with_handle_only = true;
+	  
 	  var imgA = container.find("img:first");
       var imgB = container.find("img:last");
 	  var labelA = imgA.attr('label');
