@@ -26,7 +26,7 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ### Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
-{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
+{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" label="Testing 123" %}
 Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
