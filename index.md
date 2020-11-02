@@ -29,7 +29,7 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 {% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
-*[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
+*[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a US [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
 {% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" %}
 
 ### Thermal Imaging (FLIR)
@@ -38,13 +38,16 @@ Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" th
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
 {% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" %}
-[M60A3 TTS](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia")'s FLIR gunsight spotting [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")s.
+[M60A3 TTS](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia")'s FLIR gunsight spotting Russian [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")s.
 
 {% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
 Visible light vs FLIR. Notice one vehicle's engine ([T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")) has been running for a while, and the sky appears darker.
 
 {% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
 A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some *appear* colder than others, demonstrating surface materials reflect IR differently.
+
+{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" %}
+Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.
 
 ### Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
