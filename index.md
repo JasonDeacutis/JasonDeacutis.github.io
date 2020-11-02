@@ -76,7 +76,6 @@ ArmA is not known for being well optimized, but one thing they did get right was
 ## N-Body Gravity Physics
 {% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
 Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations.
-## [WebGL Demo](WebGL\index.html)
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
