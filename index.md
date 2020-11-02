@@ -16,25 +16,25 @@
 Jason Deacutis<br>
 jasondeacutis@gmail.com
 
-## [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
+# [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
-### Vehicle Driver AI
+## Vehicle Driver AI
 Integrated AI into our physics vehicle controller, allowing vehicles to autonomously navigate to a destination while avoiding obstacles.
 {% include embed-youtube.html id="Yss-8LuLG_k" %}
 {% include embed-youtube.html id="bV-npNsO1-w" %}
 
-### Reticle System
+## Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
 All in-game reticles are based on firsthand sources (often difficult to find).
-{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" label="Testing 123" %}
+{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").
-{% include image.html alt="Reticles" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" label="[T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank") Reticle" %}
+{% include image.html alt="Reticles" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
 *[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a US [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*<br>
 {% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" %}
 
-### Thermal Imaging (FLIR)
+## Thermal Imaging (FLIR)
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
 Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
@@ -51,7 +51,7 @@ A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where al
 {% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" %}
 Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.
 
-### Day-Night Cycle
+## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
 {% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
 {% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
