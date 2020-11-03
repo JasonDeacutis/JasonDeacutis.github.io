@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jason Deacutis Portfolio
+title: Portfolio
 ---
 
 <head>
