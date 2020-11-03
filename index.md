@@ -16,22 +16,23 @@
 Jason Deacutis<br>
 jasondeacutis@gmail.com<br>
 <br>
-Gunner, HEAT, PC! (GHPC)
-- [Vehicle Driver AI](/#vehicle-driver-ai)
-- [Reticle System](/#reticle-system)
-- [Thermal Imaging (FLIR)](/#thermal-imaging-flir)
-- [Day-Night Cycle](/#day-night-cycle)
-ArmA 3 - Community Upgrade Project
-- [Terrains](/#terrains)
-- [Blender Material Tool](/#blender-material-tool)
-Personal Projects
-- [Minecraft Clone](/#minecraft-clone)
-- [N-Body Gravity Physics](/#n-body-gravity-physics)
-3D Art
-- [AN-PRC-117G Radio](/#an-prc-117g-radio--display-shield)
-- [World Machine Terrain](/#world-machine-terrain)
-- [Earth](/#earth)
-- [Retro Vector Satellite](/#retro-vector-satellite)
+- Gunner, HEAT, PC! (GHPC)
+	- [Vehicle Driver AI](/#vehicle-driver-ai)
+	- [Reticle System](/#reticle-system)
+	- [Thermal Imaging (FLIR)](/#thermal-imaging-flir)
+	- [Day-Night Cycle](/#day-night-cycle)
+- ArmA 3 - Community Upgrade Project
+	- [Terrains](/#terrains)
+	- [Blender Material Tool](/#blender-material-tool)
+- Personal Projects
+	- [Minecraft Clone](/#minecraft-clone)
+	- [N-Body Gravity Physics](/#n-body-gravity-physics)
+	- [Realtime Raytracer, Pathtracer, & Raymarcher](/#realtime-raytracer-pathtracer--raymarcher)
+- 3D Art
+	- [AN-PRC-117G Radio](/#an-prc-117g-radio--display-shield)
+	- [World Machine Terrain](/#world-machine-terrain)
+	- [Earth](/#earth)
+	- [Retro Vector Satellite](/#retro-vector-satellite)
 
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
@@ -69,7 +70,7 @@ Surface details are obtained using a semi-physically-based light model: surface 
 *Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.*
 
 ## Day-Night Cycle
-Realtime sky simulation, based on a simplified solar system model.<br>Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)").<br>The moon is also simulated as a light source & brightness is affected by phase.
+Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & brightness is affected by phase.
 {% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
 {% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
@@ -87,15 +88,21 @@ ArmA is not known for being well optimized, but one thing they did get right was
 {% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" %}
 
 # Personal Projects
+
 ## Minecraft Clone
 1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.
 {% include image.html alt="Sunset" src="content/MC-sunset.jpg" link_src="content/MC-sunset.png" %}
+
 ## N-Body Gravity Physics
-A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
+A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 {% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" %}
 *Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach.*
 {% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
 *Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations ([O(n*log(n))](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).*
+
+## Realtime Raytracer, Pathtracer, & Raymarcher
+{% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
+*[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
