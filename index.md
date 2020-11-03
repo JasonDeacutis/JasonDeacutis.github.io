@@ -101,6 +101,8 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 *Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations ([O(n*log(n))](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).*
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
+{% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" %}
+*Raytracing allows the simulation of advanced phenomenon such as soft shadows.*
 {% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
 *[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
 
