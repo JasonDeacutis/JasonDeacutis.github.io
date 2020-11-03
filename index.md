@@ -1,3 +1,8 @@
+---
+layout: default
+title: Jason Deacutis Portfolio
+---
+
 <head>
 	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
