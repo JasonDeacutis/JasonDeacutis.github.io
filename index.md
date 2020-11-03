@@ -16,7 +16,6 @@
 Jason Deacutis<br>
 jasondeacutis@gmail.com
 [Other 1](other.md)
-[Other 2](other.html)
 
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
