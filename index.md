@@ -96,13 +96,15 @@ ArmA is not known for being well optimized, but one thing they did get right was
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 {% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" %}
-*Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach.*
+*Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from **600ms** per frame to **6ms** (mostly from cache-coherency)*
 {% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
 *Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations ([O(n*log(n))](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).*
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 {% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" %}
 *Raytracing allows the simulation of advanced phenomenon such as soft shadows.*
+{% include image.html alt="Pathtracer" src="content/PT.jpg" link_src="content/PT.png" %}
+*Pathtracing is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but the result is a near perfect simulation of light.*
 {% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
 *[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
 
