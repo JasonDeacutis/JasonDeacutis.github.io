@@ -103,12 +103,8 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 {% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" %}
 ***Raytracing** allows the simulation of advanced phenomenon such as soft shadows.*
-<video autoplay playsinline loop muted poster="content/loading.png">
-  <source src="content/soft.mp4" type="video/mp4">
-</video>
-<video autoplay playsinline loop muted poster="content/loading.png">
-  <source src="content/PT.mp4" type="video/mp4">
-</video>
+{% include video.html src="content/soft.mp4" %}
+{% include video.html src="content/PT.mp4" %}
 ***Pathtracing** is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.*
 {% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
 *[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
