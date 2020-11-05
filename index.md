@@ -15,7 +15,9 @@
 
 Jason Deacutis<br>
 jasondeacutis@gmail.com<br>
-<br>
+(518) 407-5951‬<br>
+
+## Outline
 - Gunner, HEAT, PC! (GHPC)
 	- [Vehicle Driver AI](/#vehicle-driver-ai)
 	- [Reticle System](/#reticle-system)
@@ -34,12 +36,16 @@ jasondeacutis@gmail.com<br>
 	- [Earth](/#earth)
 	- [Retro Vector Satellite](/#retro-vector-satellite)
 
+---
+
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
 ## Vehicle Driver AI
 Integrated AI into our physics vehicle controller, allowing vehicles to autonomously navigate to a destination while avoiding obstacles.
 {% include embed-youtube.html id="Yss-8LuLG_k" %}
 {% include embed-youtube.html id="bV-npNsO1-w" %}
+
+---
 
 ## Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
@@ -51,6 +57,8 @@ All in-game reticles are based on firsthand sources (often difficult to find).
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
 {% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" %}
 *[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a US [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*
+
+---
 
 ## Thermal Imaging (FLIR)
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
@@ -69,11 +77,15 @@ Surface details are obtained using a semi-physically-based light model: surface 
 {% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" %}
 *Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.*
 
+---
+
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & brightness is affected by phase.
 {% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
 {% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
+
+---
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
@@ -84,8 +96,10 @@ Realtime sky simulation, based on a simplified solar system model. Includes seas
 Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for [Blender](https://www.blender.org/features/).
 {% include image.html alt="Barracks" src="content/CUP/barracks.jpg" link_src="content/CUP/barracks.jpg" %}
 {% include image.html alt="RVMAT Nodes" src="content/CUP/rvmat.jpg" link_src="content/CUP/rvmat.png" %}
-ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This drastically reduces the amount of work the CPU needs to do (drawcalls), especially when there are hundreds of models on screen.
+ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of work the CPU needs to do (drawcalls), especially when there are hundreds of models on screen.
 {% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" %}
+
+---
 
 # Personal Projects
 
@@ -96,18 +110,20 @@ ArmA is not known for being well optimized, but one thing they did get right was
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 {% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" %}
-*Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from **600ms** per frame to **6ms** (mostly from cache-coherency)*
+*Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from **~600ms** per frame to **~6ms** (mostly from cache-coherency)*
 {% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
 *Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations ([O(n*log(n))](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).*
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
+[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), and [Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") are all the process of simulating rays of light entering a camera for every pixel on screen to form an image. They are compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
 {% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" %}
-***Raytracing** allows the simulation of advanced phenomenon such as soft shadows.*
+***[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia")** allows the simulation of advanced phenomenon such as soft shadows.*
 {% include video.html src="content/soft.mp4" %}
+***[Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia")** is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.*
 {% include video.html src="content/PT.mp4" %}
-***Pathtracing** is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.*
+*Notice the slightly blurry reflections, and indirect illumination of the sphere's dark side from the ground.*
 {% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
-*[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
+***[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube")** has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
