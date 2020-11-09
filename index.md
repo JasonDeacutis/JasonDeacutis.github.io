@@ -47,7 +47,6 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 		<source src="content/GHPC/pathfinding.mp4" type="video/mp4">
 	</video>
 </p>
-{% include embed-youtube.html id="Yss-8LuLG_k" %}
 {% include embed-youtube.html id="bV-npNsO1-w" %}
 
 ---
