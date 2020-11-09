@@ -42,6 +42,11 @@ jasondeacutis@gmail.com<br>
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
 ## Vehicle Driver AI
 Integrated AI into our physics vehicle controller, allowing vehicles to autonomously navigate to a destination while avoiding obstacles.
+<p>
+	<video controls autoplay playsinline loop muted poster="content/loading.png" style="width:100%">
+		<source src="content/GHPC/pathfinding.mp4" type="video/mp4">
+	</video>
+</p>
 {% include embed-youtube.html id="Yss-8LuLG_k" %}
 {% include embed-youtube.html id="bV-npNsO1-w" %}
 
