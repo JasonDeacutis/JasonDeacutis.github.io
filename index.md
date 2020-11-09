@@ -53,10 +53,12 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ---
 
 ## Reticle System
-Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration.
-All in-game reticles are based on firsthand sources (often difficult to find).
+Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), and [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
+All reticles are based on firsthand sources, both written and photographic (often difficult to find).
 {% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 *Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").*
+{% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}
+*Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night ([reticles are white](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), they just appear black without light).*
 {% include image.html alt="Labeled Reticle" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
