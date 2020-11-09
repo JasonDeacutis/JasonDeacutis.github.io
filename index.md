@@ -1,6 +1,9 @@
 <head>
 	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+	<style>
+		desc { text-align:center; font-style:italic; }
+	</style>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
 			  crossorigin="anonymous"></script>
@@ -57,7 +60,10 @@ All reticles are based on firsthand sources, both written and photographic (ofte
 {% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 *Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").*
 {% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}
-*Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night ([reticles are white](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), they just appear black without light).*
+<desc><p style="max-width:600px; margin:auto">
+	Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night<br>
+	(<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).
+</p></desc>
 {% include image.html alt="Labeled Reticle" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
@@ -72,7 +78,7 @@ Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" th
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
 {% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" %}
-*[M60A3 TTS](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia")'s FLIR gunsight spotting Russian [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")s.*
+<desc><p><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.</p></desc>
 
 {% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
 *Visible light vs FLIR. Notice one vehicle's engine ([T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")) has been running for a while, and the sky appears darker.*
