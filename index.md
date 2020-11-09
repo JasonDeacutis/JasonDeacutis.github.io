@@ -59,11 +59,18 @@ Procedural crosshairs integrated with the ballistics system, allowing projectile
 All reticles are based on firsthand sources, both written and photographic (often difficult to find).
 {% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
 *Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").*
+
+
+{% capture content_daynightret %}
 {% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}
-<desc><p style="max-width:600px; margin:auto">
-	Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night<br>
-	(<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).
-</p></desc>
+{% endcapture %}
+{% capture desc_daynightret %}
+Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night ([reticles are white](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), they just appear black without light)." style="max-width:min-content
+{% endcapture %}
+
+{% include figure.html content=content_daynightret footer=desc_daynightret %}
+
+
 {% include image.html alt="Labeled Reticle" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
 
 [Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
@@ -84,7 +91,7 @@ Surface details are obtained using a semi-physically-based light model: surface 
 *Visible light vs FLIR. Notice one vehicle's engine ([T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")) has been running for a while, and the sky appears darker.*
 
 {% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
-*A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some *appear* colder than others, demonstrating surface materials reflect IR differently.*
+*A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some ***appear*** colder than others, demonstrating surface materials reflect IR differently.*
 
 {% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" %}
 *Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.*
