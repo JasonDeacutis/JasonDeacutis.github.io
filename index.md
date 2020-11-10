@@ -164,8 +164,9 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 {% include figure.html content=c footer=f %}
 
 # 3D Art
+While I'm not technically an artist, I do like to dabble in it when I can.
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
-Fully procedurally modeled and textured using [Blender](https://www.blender.org/features/).
+Fully procedurally modeled and textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
 {% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117g_small.jpg" link_src="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
 {% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
