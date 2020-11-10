@@ -9,3 +9,7 @@ owner:
   github: waffle1434
   google:
     plus: jasondeacutis
+
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed

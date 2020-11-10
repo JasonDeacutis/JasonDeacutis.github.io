@@ -1,5 +1,5 @@
 <center><figure style="margin-left:0px; margin-right:0px; {{include.style}}">
-	<figcaption>{{include.header}}</figcaption>
+	{% if include.header %}<figcaption>{{include.header}}</figcaption>{% endif %}
 	{{include.content}}
-	<figcaption><em>{{include.footer}}</em></figcaption>
+	{% if include.footer %}<figcaption {% if include.footerStyle %}style="{{include.footerStyle}}"{% endif %}><em>{{include.footer}}</em></figcaption>{% endif %}
 </figure></center>

@@ -57,25 +57,30 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 ## Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), and [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All reticles are based on firsthand sources, both written and photographic (often difficult to find).
-{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" %}
-*Reticles for [T-55](https://en.wikipedia.org/wiki/T-54/T-55 "50s Russian Main Battle Tank"), [BRDM-2](https://en.wikipedia.org/wiki/BRDM-2 "60s Russian Scout Car"), [T-72](https://en.wikipedia.org/wiki/T-72 "70s Russian Main Battle Tank"), [AT-4 Spigot](https://en.wikipedia.org/wiki/9K111_Fagot "Russian Wire-Guided Anti-Tank Missile"), TPKU-2B (Russian Commander Periscope), [TOW](https://en.wikipedia.org/wiki/BGM-71_TOW "US Wire-Guided Anti-Tank Missile"), and [M60A3]("70s US Main Battle Tank").*
 
-
-{% capture content_daynightret %}
-{% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}
+{% capture c %}{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
+{% capture f %}
+	Reticles for 
+	<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="50s Russian Main Battle Tank">T-55</a>, 
+	<a href="https://en.wikipedia.org/wiki/BRDM-2" title="60s Russian Scout Car">BRDM-2</a>, 
+	<a href="https://en.wikipedia.org/wiki/T-72" title="70s Russian Main Battle Tank">T-72</a>, 
+	<a href="https://en.wikipedia.org/wiki/9K111_Fagot" title="Russian Wire-Guided Anti-Tank Missile">AT-4 Spigot</a>, 
+	TPKU-2B (Russian Commander Periscope), 
+	<a href="https://en.wikipedia.org/wiki/BGM-71_TOW" title="US Wire-Guided Anti-Tank Missile">TOW</a>, 
+	and <a href="&quot;70s US Main Battle Tank&quot;">M60A3</a>.
 {% endcapture %}
-{% capture desc_daynightret %}
-Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night ([reticles are white](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), they just appear black without light)." style="max-width:min-content
-{% endcapture %}
+{% include figure.html content=c footer=f %}
 
-{% include figure.html content=content_daynightret footer=desc_daynightret %}
-
+{% capture c %}{% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}{% endcapture %}
+{% capture f %}Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night (<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).{% endcapture %}
+{% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
 {% include image.html alt="Labeled Reticle" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
 
-[Stadiametric rangefinding](https://en.wikipedia.org/wiki/Stadiametric_rangefinding "wikipedia") allows quickly determining the distance of a target based on its apparent size.<br>
-{% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" %}
-*[T-72](https://en.wikipedia.org/wiki/T-72 "wikipedia") stadia showing a US [M60A3](https://en.wikipedia.org/wiki/M60_tank#M60A3_series "wikipedia") at 500 meter distance increments*
+{% capture h %}<a href="https://en.wikipedia.org/wiki/Stadiametric_rangefinding" title="wikipedia">Stadiametric rangefinding</a> allows quickly determining the distance of a target based on its apparent size.{% endcapture %}
+{% capture c %}{% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" inline="" %}{% endcapture %}
+{% capture f %}<a href="https://en.wikipedia.org/wiki/T-72" title="wikipedia">T-72</a> stadia showing a US <a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3</a> at 500 meter distance increments{% endcapture %}
+{% include figure.html header=h content=c footer=f %}
 
 ---
 
@@ -84,17 +89,21 @@ Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward
 Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
-{% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" %}
-<desc><p><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.</p></desc>
+{% capture c %}{% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
+{% capture f %}<a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
+{% include figure.html content=c footer=f %}
 
-{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" %}
-*Visible light vs FLIR. Notice one vehicle's engine ([T-55](https://en.wikipedia.org/wiki/T-54/T-55 "wikipedia")) has been running for a while, and the sky appears darker.*
+{% capture c %}{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" inline="" %}{% endcapture %}
+{% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, and the sky appears darker.{% endcapture %}
+{% include figure.html content=c footer=f %}
 
-{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" %}
-*A [Leslie Cube](https://en.wikipedia.org/wiki/Leslie_cube "wikipedia"), where all sides are 56°C (132°F) but some ***appear*** colder than others, demonstrating surface materials reflect IR differently.*
+{% capture c %}{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" inline="" %}{% endcapture %}
+{% capture f %}A <a href="https://en.wikipedia.org/wiki/Leslie_cube" title="wikipedia">Leslie Cube</a>, where all sides are 56°C (132°F) but some <strong>appear</strong> colder than others, demonstrating surface materials reflect IR differently.{% endcapture %}
+{% include figure.html content=c footer=f style="max-width:615px" %}
 
-{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" %}
-*Demonstrating the mirrors of a Russian [UAZ](https://en.wikipedia.org/wiki/UAZ-469 "wikipedia") approximately reflect the colder background temperature.*
+{% capture c %}{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" inline="" %}{% endcapture %}
+{% capture f %}Demonstrating the mirrors of a Russian <a href="https://en.wikipedia.org/wiki/UAZ-469" title="wikipedia">UAZ</a> approximately reflect the colder background temperature.{% endcapture %}
+{% include figure.html content=c footer=f style="max-width:475px" %}
 
 ---
 
@@ -128,21 +137,31 @@ ArmA is not known for being well optimized, but one thing they did get right was
 
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
-{% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" %}
-*Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from **~600ms** per frame to **~6ms** (mostly from cache-coherency)*
-{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" %}
-*Using the [Barnes-Hut](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation "wikipedia") algorithm to reduce the number of force calculations ([O(n*log(n))](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).*
+
+{% capture c %}{% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" inline="" %}{% endcapture %}
+{% capture f %}Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency).{% endcapture %}
+{% include figure.html content=c footer=f %}
+
+{% capture c %}{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" inline="" %}{% endcapture %}
+{% capture f %}Using the <a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm to reduce the number of force calculations (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
+{% include figure.html content=c footer=f %}
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 [Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), and [Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") are all the process of simulating rays of light entering a camera for every pixel on screen to form an image. They are compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
-{% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" %}
-***[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia")** allows the simulation of advanced phenomenon such as soft shadows.*
+
+{% capture c %}{% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" inline="" %}{% endcapture %}
+{% capture f %}<strong><a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)" title="wikipedia">Raytracing</a></strong> allows the simulation of advanced phenomenon such as soft shadows.{% endcapture %}
+{% include figure.html content=c footer=f %}
 {% include video.html src="content/soft.mp4" %}
-***[Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia")** is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.*
-{% include video.html src="content/PT.mp4" %}
-*Notice the slightly blurry reflections, and indirect illumination of the sphere's dark side from the ground.*
-{% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" %}
-***[Raymaching](https://youtu.be/svLzmFuSBhk "YouTube")** has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles ([extreme non-realtime example](content/raymarch_offline.png)).*
+
+{% capture h %}<strong><a href="https://en.wikipedia.org/wiki/Path_tracing" title="wikipedia">Pathtracing</a></strong> is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.{% endcapture %}
+{% capture c %}{% include video.html src="content/PT.mp4" inline="" %}{% endcapture %}
+{% capture f %}Notice the slightly blurry reflections, and indirect illumination of the sphere’s dark side from the ground.{% endcapture %}
+{% include figure.html header=h content=c footer=f %}
+
+{% capture c %}{% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" inline="" %}{% endcapture %}
+{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymaching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<a href="/content/raymarch_offline.png">extreme non-realtime example</a>).{% endcapture %}
+{% include figure.html content=c footer=f %}
 
 # 3D Art
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
