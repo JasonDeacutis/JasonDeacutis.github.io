@@ -1,4 +1,5 @@
 <head>
+	<link rel="shortcut icon" type="image/x-icon" href="portfolio.png">
 	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	<style>
