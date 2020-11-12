@@ -27,8 +27,7 @@ jasondeacutis@gmail.com<br>
 - 3D Art
 	- [AN-PRC-117G Radio](/#an-prc-117g-radio--display-shield)
 	- [World Machine Terrain](/#world-machine-terrain)
-	- [Earth](/#earth)
-	- [Retro Vector Satellite](/#retro-vector-satellite)
+	- [Planetary](/#planetary)
 
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
@@ -82,8 +81,7 @@ Surface details are obtained using a semi-physically-based light model: surface 
 {% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, and the sky appears darker.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-
-<div style="display:flex; flex-wrap:wrap; flex-direction:row; align-content:center; justify-content: space-between;">
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
 		{% capture c %}{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.5" inline="" %}{% endcapture %}
 		{% capture f %}Demonstrating the mirrors of a Russian <a href="https://en.wikipedia.org/wiki/UAZ-469" title="wikipedia">UAZ</a> approximately reflect the colder background temperature.{% endcapture %}
@@ -123,13 +121,18 @@ ArmA is not known for being well optimized, but one thing they did get right was
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 
-{% capture c %}{% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" inline="" %}{% endcapture %}
-{% capture f %}Using a multi-threaded, cache-coherent, Brust compiled, brute-force approach. Compared to the unoptimized starting point for 4096 bodies, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency).{% endcapture %}
-{% include figure.html content=c footer=f %}
-
-{% capture c %}{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" inline="" %}{% endcapture %}
-{% capture f %}Using the <a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm to reduce the number of force calculations (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
-{% include figure.html content=c footer=f %}
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" inline="" %}{% endcapture %}
+		{% capture f %}<a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm reduces # of calculations by simulating clumps of bodies as one (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
+		{% include figure.html content=c footer=f footerStyle="max-width:475px" %}
+	</div>
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" inline="" %}{% endcapture %}
+		{% capture f %}Multi-threaded, cache-coherent, Brust compiled, brute-force approach. For 4096 bodies, compared to the unoptimized starting point, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency). PhysX collisions are now the bottleneck. {% endcapture %}
+		{% include figure.html content=c footer=f footerStyle="max-width:390px" %}
+	</div>
+</div>
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 [Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), and [Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") are all the process of simulating rays of light entering a camera for every pixel on screen to form an image. They are compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
@@ -155,7 +158,16 @@ Fully procedurally modeled and textured using [Blender](https://www.blender.org/
 {% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117g_small.jpg" link_src="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
 {% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
-### Earth
-{% include image.html alt="Earth" src="content\Art\earth_small.jpg" link_src="content\Art\earth.jpg" %}
-### Retro Vector Satellite
-{% include image.html alt="Orbit" src="content\Art\orbit.gif" link_src="content\Art\orbit.gif" %}
+### Planetary
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html alt="Earth" src="content\Art\earth_small.jpg" link_src="content\Art\earth.jpg" inline="" %}{% endcapture %}
+		{% capture f %}Earth {% endcapture %}
+		{% include figure.html content=c footer=f %}
+	</div>
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html alt="Orbit" src="content\Art\orbit.gif" link_src="content\Art\orbit.gif" inline="" %}{% endcapture %}
+		{% capture f %}Retro Vector Orbit{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:480px" %}
+	</div>
+</div>
