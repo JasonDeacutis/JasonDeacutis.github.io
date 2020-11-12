@@ -41,8 +41,8 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 {% include embed-youtube.html id="PD_lZp6V75Q" %}
 
 ## Reticle System
-Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), and [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
-All reticles are based on firsthand sources, both written and photographic (often difficult to find).
+Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
+All reticles are based on firsthand sources, both written & photographic (often difficult to find).
 
 {% capture c %}{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
 {% capture f %}
@@ -53,7 +53,7 @@ All reticles are based on firsthand sources, both written and photographic (ofte
 	<a href="https://en.wikipedia.org/wiki/9K111_Fagot" title="Russian Wire-Guided Anti-Tank Missile">AT-4 Spigot</a>, 
 	TPKU-2B (Russian Commander Periscope), 
 	<a href="https://en.wikipedia.org/wiki/BGM-71_TOW" title="US Wire-Guided Anti-Tank Missile">TOW</a>, 
-	and <a href="&quot;70s US Main Battle Tank&quot;">M60A3</a>.
+	& <a href="&quot;70s US Main Battle Tank&quot;">M60A3</a>.
 {% endcapture %}
 {% include figure.html content=c footer=f %}
 
@@ -70,15 +70,15 @@ All reticles are based on firsthand sources, both written and photographic (ofte
 
 ## Thermal Imaging (FLIR)
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
-Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
-Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, and sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
+Engines, gun barrels, tracks, (& infantry in the future) are "heat sources" that can change temperature.
+Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, & sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
 {% capture c %}{% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
 {% capture f %}<a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 {% capture c %}{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" inline="" %}{% endcapture %}
-{% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, and the sky appears darker.{% endcapture %}
+{% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, & the sky appears darker.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
@@ -115,11 +115,11 @@ ArmA is not known for being well optimized, but one thing they did get right was
 # Personal Projects
 
 ## Minecraft Clone
-1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels and infinite terrain.
+1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels & infinite terrain.
 {% include image.html alt="Sunset" src="content/MC-sunset.jpg" link_src="content/MC-sunset.png" %}
 
 ## N-Body Gravity Physics
-A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, and the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
+A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, & the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="width:max-content; margin:auto; margin-top:0px;">
@@ -135,26 +135,26 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 </div>
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
-[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), and [Raymaching](https://youtu.be/svLzmFuSBhk "YouTube") are all the process of simulating rays of light entering a camera for every pixel on screen to form an image. They are compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
+[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
 
 {% capture c %}{% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" inline="" %}{% endcapture %}
-{% capture f %}<strong><a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)" title="wikipedia">Raytracing</a></strong> allows the simulation of advanced phenomenon such as soft shadows.{% endcapture %}
-{% include figure.html content=c footer=f %}
+{% capture f %}Traditional lights are simulated as "point" sources, meaning they are infinetly small & cast sharp shadows (rare in reality). Raytracing can properly simulate light sources with shape & size, creating soft shadow <a href="https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra#/media/File:Diagram_of_umbra,_penumbra_&_antumbra.png" >penumbra</a>.{% endcapture %}
+{% include figure.html content=c footer=f footerStyle="max-width:850px" %}
 {% include video.html src="content/soft.mp4" %}
 
-{% capture h %}<strong><a href="https://en.wikipedia.org/wiki/Path_tracing" title="wikipedia">Pathtracing</a></strong> is an extension of raytracing, where every ray collision shoots a hemisphere of rays recursively. This results in a lot of visual noise when not enough rays are used, but given enough time the result is a near perfect simulation of light.{% endcapture %}
+{% capture h %}<strong><a href="https://en.wikipedia.org/wiki/Path_tracing" title="wikipedia">Pathtracing</a></strong> is an extension of raytracing where every collision "bounces" the light ray. When a ray hits a mirror, a ray is reflected. An impefect mirror defocuses the ray into a cone (blurry reflection). A white wall defocuses the ray across a hemisphere. These bounces results in a grainy image when too few rays are used, but given enough time the result is a near perfect simulation of light.{% endcapture %}
 {% capture c %}{% include video.html src="content/PT.mp4" inline="" %}{% endcapture %}
-{% capture f %}Notice the slightly blurry reflections, and indirect illumination of the sphere’s dark side from the ground.{% endcapture %}
+{% capture f %}Notice the slightly blurry reflections, & indirect illumination of the sphere’s dark side from light bouncing off the ground.{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
 {% capture c %}{% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" inline="" %}{% endcapture %}
-{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymaching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<a href="/content/raymarch_offline.png">extreme non-realtime example</a>).{% endcapture %}
+{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<a href="/content/raymarch_offline.png">extreme non-realtime example</a>).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 # 3D Art
 While I'm not technically an artist, I do like to dabble in it when I can.
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
-Fully procedurally modeled and textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
+Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
 {% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117g_small.jpg" link_src="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
 {% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
