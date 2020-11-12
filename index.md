@@ -1,20 +1,10 @@
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="portfolio.png">
-	<link href="twentytwenty/css/foundation.css" rel="stylesheet" type="text/css" />
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
-	<style>
-		desc { text-align:center; font-style:italic; }
-	</style>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-			  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script src="twentytwenty/js/jquery.event.move.js"></script>
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
-	<script>
-		$(window).on('load', function() {
-		  $(".twentytwenty-container").twentytwenty({move_with_handle_only:0, click_to_move:1});
-		});
-	</script>
+	<script>$(window).on('load', function() { $(".twentytwenty-container").twentytwenty({move_with_handle_only:0, click_to_move:1}); });</script>
 </head>
 
 Jason Deacutis<br>
@@ -40,8 +30,6 @@ jasondeacutis@gmail.com<br>
 	- [Earth](/#earth)
 	- [Retro Vector Satellite](/#retro-vector-satellite)
 
----
-
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
 ## Vehicle Driver AI
@@ -51,9 +39,7 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 		<source src="content/GHPC/pathfinding.mp4" type="video/mp4">
 	</video>
 </p>
-{% include embed-youtube.html id="4MCEmmQE4BU" %}
-
----
+{% include embed-youtube.html id="PD_lZp6V75Q" %}
 
 ## Reticle System
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), and [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
@@ -83,8 +69,6 @@ All reticles are based on firsthand sources, both written and photographic (ofte
 {% capture f %}<a href="https://en.wikipedia.org/wiki/T-72" title="wikipedia">T-72</a> stadia showing a US <a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3</a> at 500 meter distance increments{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
----
-
 ## Thermal Imaging (FLIR)
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
 Engines, gun barrels, tracks, (and infantry in the future) are "heat sources" that can change temperature.
@@ -98,23 +82,25 @@ Surface details are obtained using a semi-physically-based light model: surface 
 {% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, and the sky appears darker.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-{% capture c %}{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" inline="" %}{% endcapture %}
-{% capture f %}A <a href="https://en.wikipedia.org/wiki/Leslie_cube" title="wikipedia">Leslie Cube</a>, where all sides are 56°C (132°F) but some <strong>appear</strong> colder than others, demonstrating surface materials reflect IR differently.{% endcapture %}
-{% include figure.html content=c footer=f style="max-width:615px" %}
 
-{% capture c %}{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.517" inline="" %}{% endcapture %}
-{% capture f %}Demonstrating the mirrors of a Russian <a href="https://en.wikipedia.org/wiki/UAZ-469" title="wikipedia">UAZ</a> approximately reflect the colder background temperature.{% endcapture %}
-{% include figure.html content=c footer=f style="max-width:475px" %}
-
----
+<div style="display:flex; flex-wrap:wrap; flex-direction:row; align-content:center; justify-content: space-between;">
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.5" inline="" %}{% endcapture %}
+		{% capture f %}Demonstrating the mirrors of a Russian <a href="https://en.wikipedia.org/wiki/UAZ-469" title="wikipedia">UAZ</a> approximately reflect the colder background temperature.{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:475px" %}
+	</div>
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" inline="" %}{% endcapture %}
+		{% capture f %}A <a href="https://en.wikipedia.org/wiki/Leslie_cube" title="wikipedia">Leslie Cube</a>, where all sides are 56°C (132°F) but some <strong>appear</strong> colder than others, demonstrating surface materials reflect IR differently.{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:490px" %}
+	</div>
+</div>
 
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & brightness is affected by phase.
 {% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
 {% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
-
----
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
@@ -127,8 +113,6 @@ Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armah
 {% include image.html alt="RVMAT Nodes" src="content/CUP/rvmat.jpg" link_src="content/CUP/rvmat.png" %}
 ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of work the CPU needs to do (drawcalls), especially when there are hundreds of models on screen.
 {% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" %}
-
----
 
 # Personal Projects
 
