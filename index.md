@@ -5,6 +5,42 @@
 	<script src="twentytwenty/js/jquery.event.move.js"></script>
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
 	<script>$(window).on('load', function() { $(".twentytwenty-container").twentytwenty({move_with_handle_only:0, click_to_move:1}); });</script>
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
+	<style>
+	.tooltip {
+		display: inline;
+		position: relative;
+		border-bottom: 1px dotted black;
+	}
+	.tooltip:hover:after {
+		position: absolute;
+		bottom: 150%;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba(0,0,0,0.9);
+		color: white;
+		border-radius: 6px;
+		padding: 6px;
+		content: attr(tip);
+		text-align: center;
+		width: max-content;
+		max-width: 500px;
+	}
+	.tooltip:hover:before {
+		position: absolute;
+		bottom: 150%;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		border: solid;
+		border-color: rgba(0,0,0,0.9) transparent;
+		border-width: 6px 6px 0px;
+		content: "";
+	}
+	</style>
 </head>
 
 Jason Deacutis<br>
@@ -24,6 +60,7 @@ jasondeacutis@gmail.com<br>
 	- [Minecraft Clone](/#minecraft-clone)
 	- [N-Body Gravity Physics](/#n-body-gravity-physics)
 	- [Realtime Raytracer, Pathtracer, & Raymarcher](/#realtime-raytracer-pathtracer--raymarcher)
+	- [Reverse Engineering](/#reverse-engineering)
 - 3D Art
 	- [AN-PRC-117G Radio](/#an-prc-117g-radio--display-shield)
 	- [World Machine Terrain](/#world-machine-terrain)
@@ -44,7 +81,7 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All reticles are based on firsthand sources, both written & photographic (often difficult to find).
 
-{% capture c %}{% include image.html alt="Reticles" src="content\GHPC\Reticles\reticles_small.jpg" link_src="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
 {% capture f %}
 	Reticles for 
 	<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="50s Russian Main Battle Tank">T-55</a>, 
@@ -61,10 +98,10 @@ All reticles are based on firsthand sources, both written & photographic (often 
 {% capture f %}Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night (<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
-{% include image.html alt="Labeled Reticle" src="content\GHPC\Reticles\t55_labeled_small.jpg" link_src="content\GHPC\Reticles\t55_labeled.jpg" %}
+{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" %}
 
 {% capture h %}<a href="https://en.wikipedia.org/wiki/Stadiametric_rangefinding" title="wikipedia">Stadiametric rangefinding</a> allows quickly determining the distance of a target based on its apparent size.{% endcapture %}
-{% capture c %}{% include image.html alt="Stadia" src="content\GHPC\Reticles\stadia_small.jpg" link_src="content\GHPC\Reticles\stadia.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline="" %}{% endcapture %}
 {% capture f %}<a href="https://en.wikipedia.org/wiki/T-72" title="wikipedia">T-72</a> stadia showing a US <a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3</a> at 500 meter distance increments{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
@@ -73,7 +110,7 @@ Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward
 Engines, gun barrels, tracks, (& infantry in the future) are "heat sources" that can change temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, & sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
-{% capture c %}{% include image.html alt="FLIR" src="content\GHPC\FLIR\TTS_small.png" link_src="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\FLIR\TTS_small.png" href="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
 {% capture f %}<a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
@@ -96,48 +133,48 @@ Surface details are obtained using a semi-physically-based light model: surface 
 
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & brightness is affected by phase.
-{% include image.html alt="Sunpath" src="content\GHPC\Sky\sunpath_small.jpg" link_src="content\GHPC\Sky\sunpath.png" %}
-{% include image.html alt="Moon Phases" src="content\GHPC\Sky\moon2.gif" link_src="content\GHPC\Sky\moon2.gif" %}
+{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" %}
+{% include image.html src="content\GHPC\Sky\moon2.gif" %}
 {% include embed-youtube.html id="kvQDc_CfAFo" %}
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
-{% include image.html alt="Chernarus" src="content/CUP/chernarus_small.jpg" link_src="content/CUP/chernarus.png" %}
+{% include image.html src="content/CUP/chernarus_small.jpg" href="content/CUP/chernarus.png" %}
 {% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" %}
 ## Blender Material Tool
 Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for [Blender](https://www.blender.org/features/).
-{% include image.html alt="Barracks" src="content/CUP/barracks.jpg" link_src="content/CUP/barracks.jpg" %}
-{% include image.html alt="RVMAT Nodes" src="content/CUP/rvmat.jpg" link_src="content/CUP/rvmat.png" %}
-ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of work the CPU needs to do (drawcalls), especially when there are hundreds of models on screen.
+{% include image.html src="content/CUP/barracks.jpg" %}
+{% include image.html src="content/CUP/rvmat.jpg" href="content/CUP/rvmat.png" %}
+ArmA is not known for being well optimized, but one thing they did get right was the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of work the CPU needs to do (<span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcalls</span>), especially when there are hundreds of models on screen.
 {% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" %}
 
 # Personal Projects
 
 ## Minecraft Clone
-1-Month sprint to attempt to recreate [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels & infinite terrain.
-{% include image.html alt="Sunset" src="content/MC-sunset.jpg" link_src="content/MC-sunset.png" %}
+1-Month stab at recreating [Minecraft](https://en.wikipedia.org/wiki/Minecraft "wikipedia") for fun. Implemented dynamic voxels & infinite terrain.
+{% include image.html src="content/MC-sunset.jpg" href="content/MC-sunset.png" %}
 
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, & the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html alt="N-Body Barnes" src="content/BH.gif" link_src="content/BH.gif" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content/BH.gif" inline="" %}{% endcapture %}
 		{% capture f %}<a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm reduces # of calculations by simulating clumps of bodies as one (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:475px" %}
 	</div>
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html alt="N-Body" src="content/nbody.gif" link_src="content/nbody.gif" inline="" %}{% endcapture %}
-		{% capture f %}Multi-threaded, cache-coherent, Brust compiled, brute-force approach. For 4096 bodies, compared to the unoptimized starting point, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency). PhysX collisions are now the bottleneck. {% endcapture %}
+		{% capture c %}{% include image.html src="content/nbody.gif" inline="" %}{% endcapture %}
+		{% capture f %}Multi-threaded, <span class="tooltip" tip="Keeping memory access grouped together. Extremely important for high performance code.">cache-coherent</span>, <span class="tooltip" tip="Unity's new low-level C# compiler that attempts to convert code to a more parallel form (vectorization).">Burst compiled</span>, brute-force approach. For 4096 bodies, compared to the unoptimized starting point, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency). PhysX collisions are now the bottleneck. {% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:390px" %}
 	</div>
 </div>
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
-[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional [triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia"), but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
+[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional <span class="tooltip" tip="Drawing images using trangles to represent objects, as any shape can be made given enough triangles.">[triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia")</span>, but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
 
-{% capture c %}{% include image.html alt="Raytracer" src="content/RT.jpg" link_src="content/RT.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content/RT.jpg" href="content/RT.png" inline="" %}{% endcapture %}
 {% capture f %}Traditional lights are simulated as "point" sources, meaning they are infinetly small & cast sharp shadows (rare in reality). Raytracing can properly simulate light sources with shape & size, creating soft shadow <a href="https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra#/media/File:Diagram_of_umbra,_penumbra_&_antumbra.png" >penumbra</a>.{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:850px" %}
 {% include video.html src="content/soft.mp4" %}
@@ -147,26 +184,75 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 {% capture f %}Notice the slightly blurry reflections, & indirect illumination of the sphere’s dark side from light bouncing off the ground.{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
-{% capture c %}{% include image.html alt="Raymarch" src="content/raymacher1_small.jpg" link_src="content/raymacher1.png" inline="" %}{% endcapture %}
-{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<a href="/content/raymarch_offline.png">extreme non-realtime example</a>).{% endcapture %}
+{% capture c %}{% include image.html src="content/raymacher1_small.jpg" href="content/raymacher1.png" inline="" %}{% endcapture %}
+{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<strong><a href="/content/raymarch_offline.png">extreme non-realtime example</a></strong>).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
+## Reverse Engineering
+***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
+
+### Battlefield 3 (Frostbite Engine)
+{% capture c %}{% include compare.html a="content\RenderDoc\bf3_alley_ingame.jpg" b="content\RenderDoc\bf3_alley_blender.jpg" labelA="BF3" labelB="Blender" inline="" %}{% endcapture %}
+{% capture f %}An alley (from the <a href="https://youtu.be/HlOwEFJJBnA?t=441" title="YouTube">first campaign level</a>) imported into Blender without textures for analysis.{% endcapture %}
+{% include figure.html content=c footer=f %}
+{% include image.html src="content\RenderDoc\bf3_alley_blender_dof.jpg" href="content\RenderDoc\bf3_alley_blender_dof.png" %}
+
+<center><strong>Render Analysis</strong></center>
+{% capture c %}{% include image.html src="content\RenderDoc\alley_drawcalls.gif" inline="" %}{% endcapture %}
+{% capture f %}
+A wireframe is shown for each <span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcall</span> issued.
+BF3 makes heavy use of <span class="tooltip" tip="Drawing many copies of a mesh in one drawcall."><a href="https://docs.unity3d.com/Manual/GPUInstancing.html">instancing</a></span>, so most of the geometry is drawn in relatively few drawcalls (~300 here).
+Only unlit surface color is shown, but simultaneously <strong><a href="content/RenderDoc/render-targets.gif" title="Render Targets">other PBR data is being drawn</a></strong> (<span class="tooltip" tip="Rendering where lighting calculations are delayed until all geometry is drawn, avoiding wasted overdrawn work.">deferred rendering</span>).
+{% endcapture %}
+{% include figure.html content=c footer=f %}
+
+To understand how the texturing was achieved, I wrote a Python script in Blender to convert shader assembly to a material node network.
+
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include assembly.html %}{% endcapture %}
+		{% capture f %}M4A1 rifle DirectX <span class="tooltip" tip="Code responsible for coloring every pixel on screen.">pixel shader</span> assembly{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:475px" %}
+	</div>
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html src="content\RenderDoc\dxbc_normal.jpg" inline="" %}{% endcapture %}
+		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to aproximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:490px" %}
+	</div>
+</div>
+
+<center>Converted to Blender Material Node Network</center>
+{% include image.html src="content\RenderDoc\bf3_m4a1_dxbc_nodes.jpg" href="content\RenderDoc\bf3_m4a1_dxbc_nodes.png" %}
+
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html src="content\RenderDoc\bf3_m4a1_desert.jpg" href="content\RenderDoc\bf3_m4a1_desert.png" inline="" %}{% endcapture %}
+		{% capture f %}Desert camoflague variant, with every bumb & scratch exactly as ingame{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
+	</div>
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html src="content\RenderDoc\bf3_m4a1_black.jpg" href="content\RenderDoc\bf3_m4a1_black.png" inline="" %}{% endcapture %}
+		{% capture f %}Ordinary black variant uncovered by bypassing the desert camo part of the node network{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
+	</div>
+</div>
+
 # 3D Art
-While I'm not technically an artist, I do like to dabble in it when I can.
+While I'm not technically an artist, I like to dabble in it when I can.
 ### [AN-PRC-117G](content\Art\AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content\Art\AN-PRC-117G_FALCON_III_shield.jpg)
 Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
-{% include image.html alt="AN-PRC-117G" src="content\Art\an-prc-117g_small.jpg" link_src="content\Art\an-prc-117g.png" %}
+{% include image.html src="content\Art\an-prc-117g_small.jpg" href="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
-{% include image.html alt="World Machine" src="content\Art\WM_small.jpg" link_src="content\Art\WM.jpg" %}
+{% include image.html src="content\Art\WM_small.jpg" href="content\Art\WM.jpg" %}
 ### Planetary
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html alt="Earth" src="content\Art\earth_small.jpg" link_src="content\Art\earth.jpg" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Art\earth_small.jpg" href="content\Art\earth.jpg" inline="" %}{% endcapture %}
 		{% capture f %}Earth {% endcapture %}
 		{% include figure.html content=c footer=f %}
 	</div>
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html alt="Orbit" src="content\Art\orbit.gif" link_src="content\Art\orbit.gif" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Art\orbit.gif" inline="" %}{% endcapture %}
 		{% capture f %}Retro Vector Orbit{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:480px" %}
 	</div>

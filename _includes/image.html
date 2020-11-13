@@ -1,3 +1,5 @@
 {% unless include.inline %}<p>{% endunless %}
-<a href="{{include.link_src}}" target="_blank" title="Enlarge"><img src="{{include.src}}" loading="lazy" alt="{{include.alt}}"></a>{{include.label}}
+	<a href="{{include.href | default: include.src}}" target="_blank" title="Enlarge">
+		<img src="{{include.src}}" loading="lazy" alt="{{include.src}}">
+	</a>{{include.label}}
 {% unless include.inline %}</p>{% endunless %}
