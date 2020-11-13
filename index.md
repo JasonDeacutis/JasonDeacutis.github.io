@@ -98,7 +98,9 @@ All reticles are based on firsthand sources, both written & photographic (often 
 {% capture f %}Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night (<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
-{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline="" %}{% endcapture %}
+{% capture f %}Russian T-55 gunsight with labels{% endcapture %}
+{% include figure.html content=c footer=f style="max-width:720px" %}
 
 {% capture h %}<a href="https://en.wikipedia.org/wiki/Stadiametric_rangefinding" title="wikipedia">Stadiametric rangefinding</a> allows quickly determining the distance of a target based on its apparent size.{% endcapture %}
 {% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline="" %}{% endcapture %}
