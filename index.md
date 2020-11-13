@@ -28,7 +28,7 @@
 		content: attr(tip);
 		text-align: center;
 		width: max-content;
-		max-width: 500px;
+		max-width: min(500px, 50vw);
 	}
 	.tooltip:hover:before {
 		position: absolute;
@@ -209,7 +209,7 @@ Only unlit surface color is shown, but simultaneously <strong><a href="content/R
 To understand how the texturing was achieved, I wrote a Python script in Blender to convert shader assembly to a material node network.
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px;">
+	<div style="margin:auto; margin-top:0px; max-width:100%">
 		{% capture c %}{% include assembly.html %}{% endcapture %}
 		{% capture f %}M4A1 rifle DirectX <span class="tooltip" tip="Code responsible for coloring every pixel on screen.">pixel shader</span> assembly{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:475px" %}
