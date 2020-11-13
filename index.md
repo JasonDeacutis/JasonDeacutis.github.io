@@ -134,10 +134,14 @@ Surface details are obtained using a semi-physically-based light model: surface 
 </div>
 
 ## Day-Night Cycle
-Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & brightness is affected by phase.
-{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" %}
-{% include image.html src="content\GHPC\Sky\moon2.gif" %}
-{% include embed-youtube.html id="kvQDc_CfAFo" %}
+Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
+
+{% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline="" %}{% endcapture %}
+{% capture f %}Sunpath over the course of a year{% endcapture %}
+{% include figure.html content=c footer=f %}
+
+<center>{% include image.html src="content\GHPC\Sky\moon2.gif" %}</center>
+<center>{% include embed-youtube.html id="kvQDc_CfAFo" %}</center>
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
@@ -245,6 +249,7 @@ While I'm not technically an artist, I like to dabble in it when I can.
 Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
 {% include image.html src="content\Art\an-prc-117g_small.jpg" href="content\Art\an-prc-117g.png" %}
 ### [World Machine](https://www.world-machine.com/ "www.world-machine.com") Terrain
+Fully procedurally modeled & textured using World Machine's erosion simulation.
 {% include image.html src="content\Art\WM_small.jpg" href="content\Art\WM.jpg" %}
 ### Planetary
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
