@@ -27,6 +27,8 @@
 		padding: 6px;
 		content: attr(tip);
 		text-align: center;
+		font-size: 16px;
+		font-weight:normal;
 		width: max-content;
 		max-width: min(500px, 50vw);
 	}
@@ -60,7 +62,7 @@ jasondeacutis@gmail.com<br>
 	- [Minecraft Clone](/#minecraft-clone)
 	- [N-Body Gravity Physics](/#n-body-gravity-physics)
 	- [Realtime Raytracer, Pathtracer, & Raymarcher](/#realtime-raytracer-pathtracer--raymarcher)
-	- [Reverse Engineering](/#reverse-engineering)
+	- [Battlefield 3 Reverse Engineering](/#reverse-engineering---battlefield-3)
 - 3D Art
 	- [AN-PRC-117G Radio](/#an-prc-117g-radio--display-shield)
 	- [World Machine Terrain](/#world-machine-terrain)
@@ -78,8 +80,8 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 {% include embed-youtube.html id="PD_lZp6V75Q" %}
 
 ## Reticle System
-Procedural crosshairs integrated with the ballistics system, allowing projectile trajectories to change on-the-fly for faster design iteration. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
-All reticles are based on firsthand sources, both written & photographic (often difficult to find).
+Dynamic gunsight crosshairs integrated with the ballistics system, ensuring projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
+All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">reticles</span> were meticulously recreated from their real-world counterparts, using written & photographic reference (often difficult to find).
 
 {% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
 {% capture f %}
@@ -140,7 +142,10 @@ Realtime sky simulation, based on a simplified solar system model. Includes seas
 {% capture f %}Sunpath over the course of a year{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-<center>{% include image.html src="content\GHPC\Sky\moon2.gif" %}</center>
+{% capture c %}{% include image.html src="content\GHPC\Sky\moon2.gif" inline="" %}{% endcapture %}
+{% capture f %}Moon phase cycle {% endcapture %}
+{% include figure.html content=c footer=f %}
+
 <center>{% include embed-youtube.html id="kvQDc_CfAFo" %}</center>
 
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
@@ -178,7 +183,7 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 </div>
 
 ## Realtime Raytracer, Pathtracer, & Raymarcher
-[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional <span class="tooltip" tip="Drawing images using trangles to represent objects, as any shape can be made given enough triangles.">[triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia")</span>, but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.**
+[Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional <span class="tooltip" tip="Drawing images using trangles to represent objects, as any shape can be made given enough triangles.">[triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia")</span>, but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.** All renderers here were made from scratch in Unity running on a GTX 1070 Ti without the use of RTX.
 
 {% capture c %}{% include image.html src="content/RT.jpg" href="content/RT.png" inline="" %}{% endcapture %}
 {% capture f %}Traditional lights are simulated as "point" sources, meaning they are infinetly small & cast sharp shadows (rare in reality). Raytracing can properly simulate light sources with shape & size, creating soft shadow <a href="https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra#/media/File:Diagram_of_umbra,_penumbra_&_antumbra.png" >penumbra</a>.{% endcapture %}
@@ -194,26 +199,27 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 {% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<strong><a href="/content/raymarch_offline.png">extreme non-realtime example</a></strong>).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-## Reverse Engineering
+## Reverse Engineering - <span class="tooltip" tip="AAA 2011 first-person-shooter game, revolutionary for its graphics at the time">Battlefield 3</span>
 ***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
 
-### Battlefield 3 (Frostbite Engine)
 {% capture c %}{% include compare.html a="content\RenderDoc\bf3_alley_ingame.jpg" b="content\RenderDoc\bf3_alley_blender.jpg" labelA="BF3" labelB="Blender" inline="" %}{% endcapture %}
 {% capture f %}An alley (from the <a href="https://youtu.be/HlOwEFJJBnA?t=441" title="YouTube">first campaign level</a>) imported into Blender without textures for analysis.{% endcapture %}
 {% include figure.html content=c footer=f %}
-{% include image.html src="content\RenderDoc\bf3_alley_blender_dof.jpg" href="content\RenderDoc\bf3_alley_blender_dof.png" %}
+
+{% capture c %}{% include image.html src="content\RenderDoc\bf3_alley_blender_dof.jpg" href="content\RenderDoc\bf3_alley_blender_dof.png" inline="" %}{% endcapture %}
+{% capture f %}Fully textured scene coming soon™{% endcapture %}
+{% include figure.html content=c footer=f %}
 
 <center><strong>Render Analysis</strong></center>
 {% capture c %}{% include image.html src="content\RenderDoc\alley_drawcalls.gif" inline="" %}{% endcapture %}
 {% capture f %}
 A wireframe is shown for each <span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcall</span> issued.
 BF3 makes heavy use of <span class="tooltip" tip="Drawing many copies of a mesh in one drawcall."><a href="https://docs.unity3d.com/Manual/GPUInstancing.html">instancing</a></span>, so most of the geometry is drawn in relatively few drawcalls (~300 here).
-Only unlit surface color is shown, but simultaneously <strong><a href="content/RenderDoc/render-targets.gif" title="Render Targets">other PBR data is being drawn</a></strong> (<span class="tooltip" tip="Rendering where lighting calculations are delayed until all geometry is drawn, avoiding wasted overdrawn work.">deferred rendering</span>).
+Only unlit surface color is shown, but simultaneously <strong><a href="content/RenderDoc/render-targets.gif" title="Render Targets">other PBR data is being drawn</a></strong> (<span class="tooltip" tip="Lighting calculations are delayed until all geometry is drawn, avoiding expensive shading on hidden pixels & allowing many light sources.">deferred rendering</span>).
 {% endcapture %}
 {% include figure.html content=c footer=f %}
 
 To understand how the texturing was achieved, I wrote a Python script in Blender to convert shader assembly to a material node network.
-
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px; max-width:100%">
 		{% capture c %}{% include assembly.html %}{% endcapture %}
@@ -230,6 +236,7 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 <center>Converted to Blender Material Node Network</center>
 {% include image.html src="content\RenderDoc\bf3_m4a1_dxbc_nodes.jpg" href="content\RenderDoc\bf3_m4a1_dxbc_nodes.png" %}
 
+<center>The result is a near pixel perfect recreation of how the rifle appears ingame.</center>
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
 		{% capture c %}{% include image.html src="content\RenderDoc\bf3_m4a1_desert.jpg" href="content\RenderDoc\bf3_m4a1_desert.png" inline="" %}{% endcapture %}
@@ -242,6 +249,7 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
 </div>
+Ultimately the goal was to fully automate this process to work for all art on screen, but developing the automation proved to be time consuming and I never got around to finishing it.
 
 # 3D Art
 While I'm not technically an artist, I like to dabble in it when I can.
