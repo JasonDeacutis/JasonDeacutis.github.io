@@ -1,4 +1,14 @@
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQYH8LPF2Y"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-YQYH8LPF2Y');
+	</script>
+
 	<link rel="shortcut icon" type="image/x-icon" href="portfolio.png">
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
