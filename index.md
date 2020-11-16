@@ -57,7 +57,6 @@
 
 Jason Deacutis<br>
 jasondeacutis@gmail.com<br>
-(518) 407-5951‬<br>
 
 ## Outline
 - Gunner, HEAT, PC! (GHPC)
