@@ -112,6 +112,8 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% endcapture %}
 {% include figure.html content=c footer=f %}
 
+<!--<center>{% include embed-youtube.html id="9ALBTiN3ifQ" options="start=39; end=61" %}</center>-->
+
 {% capture c %}{% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}{% endcapture %}
 {% capture f %}Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night (<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
@@ -128,9 +130,9 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 ## Thermal Imaging (FLIR)
 ***Disclaimer:** Work in progress, many features are still missing and are subject to change.*
 
-Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
-Engines, gun barrels, tracks, (& infantry in the future) are "heat sources" that can change temperature.
-Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, & sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
+Approximation of [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles and infantry.
+Vehicle engines, gun barrels, & tracks are heat sources that can change temperature independently. In addition, the sun's position is used to determine the ambient environement temperature.
+Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
 {% capture c %}{% include image.html src="content\GHPC\FLIR\TTS_small.png" href="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
 {% capture f %}US FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
