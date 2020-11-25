@@ -1,6 +1,6 @@
 <div style="margin-top: 1em;">
 	<div class="twentytwenty-container" {% if include.orientation %}orientation="{{include.orientation}}"{% endif %} {% if include.pos %}pos="{{include.pos}}"{% endif %}>
-		<img src="{{include.a}}" {% if include.labelA %}label="{{include.labelA}}"{% endif %}/>
-		<img src="{{include.b}}" {% if include.labelB %}label="{{include.labelB}}"{% endif %}/>
+		<img src="{{include.a}}" {% if include.labelA %}label="{{include.labelA}}"{% endif %} style="transition: 0s"/>
+		<img src="{{include.b}}" {% if include.labelB %}label="{{include.labelB}}"{% endif %} style="transition: 0s"/>
 	</div>
 </div>

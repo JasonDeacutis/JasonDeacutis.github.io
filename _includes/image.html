@@ -1,5 +1,5 @@
 {% unless include.inline %}<p>{% endunless %}
 	<a href="{{include.href | default: include.src}}" target="_blank" title="Enlarge">
-		<img src="{{include.src}}" loading="lazy" alt="{{include.src}}">
+		<img src="{{include.src}}" loading="lazy" alt="{{include.src}}" {% if include.style %}style="{{include.style}}"{% endif %}>
 	</a>{{include.label}}
 {% unless include.inline %}</p>{% endunless %}

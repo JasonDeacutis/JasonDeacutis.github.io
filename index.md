@@ -52,6 +52,13 @@
 		border-width: 6px 6px 0px;
 		content: "";
 	}
+	
+	img {
+		transition: .25s ease;
+	}
+	img:hover {
+		filter: brightness(75%);
+	}
 	</style>
 </head>
 
@@ -119,13 +126,25 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% include figure.html header=h content=c footer=f %}
 
 ## Thermal Imaging (FLIR)
+***Disclaimer:** Work in progress, many features are still missing and are subject to change.*
+
 Approximation of heat for vehicle's [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") sights.
 Engines, gun barrels, tracks, (& infantry in the future) are "heat sources" that can change temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, metalness, & sun illumination are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers.
 
 {% capture c %}{% include image.html src="content\GHPC\FLIR\TTS_small.png" href="content\GHPC\FLIR\TTS.png" inline="" %}{% endcapture %}
-{% capture f %}<a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
+{% capture f %}US FLIR gunsight spotting Russian <a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>s.{% endcapture %}
 {% include figure.html content=c footer=f %}
+
+<center>
+	<figure style="margin-left: 0px;margin-right: 0px;font-size: 0; background-color:black">
+		{% include image.html src="content\GHPC\FLIR\m60a3_1.jpg" href="content\GHPC\FLIR\m60a3_1.png" style="width:calc(50% - 1px); border-width:0 1px 1px 0; border-style:solid; border-color:black" inline="" %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_3.jpg" href="content\GHPC\FLIR\m60a3_3.png" style="width:calc(50% - 1px); border-width:0 0 1px 0; border-style:solid; border-color:black" inline="" %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_5.jpg" href="content\GHPC\FLIR\m60a3_5.png" style="width:calc(50% - 1px); border-width:0 1px 0 0; border-style:solid; border-color:black" inline="" %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_4.jpg" href="content\GHPC\FLIR\m60a3_4.png" style="width:calc(50% - 1px); border-width:0 0 0 0; border-style:solid; border-color:black" inline="" %}
+		<figcaption style="font-size:initial; background-color:white"><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
+	</figure>
+</center>
 
 {% capture c %}{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" inline="" %}{% endcapture %}
 {% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, & the sky appears darker.{% endcapture %}
