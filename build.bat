@@ -1,2 +1,2 @@
-cd C:\Users\super\Desktop\Waffle1434.github.io
+cd C:\Users\super\Desktop\JasonDeacutis.github.io
 bundle exec jekyll serve

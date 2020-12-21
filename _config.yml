@@ -1,4 +1,5 @@
 title: Jason Deacutis - Portfolio
+description: Game development and graphics programming work (Unity3D).
 locale: en_US
 
 owner:
@@ -6,10 +7,11 @@ owner:
   bio: Personal software/game development portfolio website.
   email: jasondeacutis@gmail.com
   linkedin: jasondeacutis
-  github: waffle1434
+  github: https://github.com/JasonDeacutis
   google:
     plus: jasondeacutis
 
 theme: jekyll-theme-primer
+layout: default
 plugins:
   - jekyll-feed
