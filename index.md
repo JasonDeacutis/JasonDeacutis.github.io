@@ -54,6 +54,8 @@
 Jason Deacutis<br>
 jasondeacutis@gmail.com<br>
 
+<!-- [Overview](overview) -->
+
 ## Outline
 - Gunner, HEAT, PC! (GHPC)
 	- [Vehicle Driver AI](/#vehicle-driver-ai)
@@ -77,18 +79,18 @@ jasondeacutis@gmail.com<br>
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Early Access "Cold War Gone Hot" tank simulation game.<br>GHPC is short for "Gunner, use High Explosive Anti Tank round on enemy Personnel Carrier!" (yes, its nerdy)*
 
-<div style="display:grid; grid-template-columns: 50% 50%; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
-	{% include image.html src="content\GHPC\T-55s.jpg" inline="" %}
-	{% include image.html src="content\GHPC\Night Fire.jpg" inline="" %}
-	{% include image.html src="content\GHPC\T-72s.jpg" inline="" %}
-	{% include image.html src="content\GHPC\Abrams.jpg" inline="" %}
+<div style="display:grid; grid-template-columns: auto auto; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
+	{% include image.html src="content\GHPC\T-55s.jpg" inline=1 %}
+	{% include image.html src="content\GHPC\Night Fire.jpg" inline=1 %}
+	{% include image.html src="content\GHPC\T-72s.jpg" inline=1 %}
+	{% include image.html src="content\GHPC\Abrams.jpg" inline=1 %}
 </div>
 
 ## Reticles
 Gunsight crosshairs are integrated with the ballistics system, elements are procedurally placed to ensure projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflex reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">reticles</span> were meticulously recreated from their real-world counterparts, using written & photographic reference (often difficult to find).
 
-{% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" w=980 h=490 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline=1 w=980 h=490 %}{% endcapture %}
 {% capture f %}
 	Reticles for 
 	<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="50s Russian Main Battle Tank">T-55</a>, 
@@ -107,12 +109,12 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% capture f %}Nearly every gunsight since WW2 has an internal light for use at night<br>(<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are actually white!</a>).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
-{% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline="" w=980 h=729 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline=1 w=980 h=729 %}{% endcapture %}
 {% capture f %}Russian T-55 gunsight with labels{% endcapture %}
 {% include figure.html content=c footer=f style="max-width:720px" %}
 
 {% capture h %}<a href="https://en.wikipedia.org/wiki/Stadiametric_rangefinding" title="wikipedia">Stadiametric rangefinding</a> allows quickly determining the distance of a target based on its apparent size.{% endcapture %}
-{% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline="" w=605 h=200 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline=1 w=605 h=200 %}{% endcapture %}
 {% capture f %}<a href="https://en.wikipedia.org/wiki/T-72" title="wikipedia">T-72</a> stadia showing a US <a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3</a> at 500 meter distance increments{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
@@ -122,11 +124,11 @@ Vehicle engines, gun barrels, & tracks are heat sources that can change temperat
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: 50% 50%; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
-		{% include image.html src="content\GHPC\FLIR\m60a3_1.jpg" href="content\GHPC\FLIR\m60a3_1.png" inline="" %}
-		{% include image.html src="content\GHPC\FLIR\m60a3_3.jpg" href="content\GHPC\FLIR\m60a3_3.png" inline="" %}
-		{% include image.html src="content\GHPC\FLIR\m60a3_5.jpg" href="content\GHPC\FLIR\m60a3_5.png" inline="" %}
-		{% include image.html src="content\GHPC\FLIR\m60a3_4.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline="" %}
+	<div style="display:grid; grid-template-columns: auto auto; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
+		{% include image.html src="content\GHPC\FLIR\m60a3_1.jpg" href="content\GHPC\FLIR\m60a3_1.png" inline=1 %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_3.jpg" href="content\GHPC\FLIR\m60a3_3.png" inline=1 %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_5.jpg" href="content\GHPC\FLIR\m60a3_5.png" inline=1 %}
+		{% include image.html src="content\GHPC\FLIR\m60a3_4.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline=1 %}
 	</div>
 	<figcaption style="font-size:initial; background-color:white"><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
 </center>
@@ -146,12 +148,12 @@ There's a lot of room for optimization, but there was no need given how fast it 
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\GHPC\SDF\contour.gif" inline="" style="width=100%; aspect-ratio:1" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\GHPC\SDF\contour.gif" inline=1 style="width=100%; aspect-ratio:1" %}{% endcapture %}
 		{% capture f %}Anti-aliased contour lines rendered directly from the heightmap file.{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
 	</div>
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\GHPC\SDF\map.gif" inline="" style="width=100%; aspect-ratio:1" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\GHPC\SDF\map.gif" inline=1 style="width=100%; aspect-ratio:1" %}{% endcapture %}
 		{% capture f %}Multiple SDFs allow multiple colors & are combined with shaded relief.{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
 	</div>
@@ -160,11 +162,11 @@ There's a lot of room for optimization, but there was no need given how fast it 
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Takes into account the map's global coordinates. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
 
-{% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline="" w=702 h=394 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline=1 w=702 h=394 %}{% endcapture %}
 {% capture f %}Sunpath over the course of a year{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-{% capture c %}{% include image.html src="content\GHPC\Sky\moon2.gif" inline="" w=615 h=122 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Sky\moon2.gif" inline=1 w=615 h=122 %}{% endcapture %}
 {% capture f %}Moon phase cycle {% endcapture %}
 {% include figure.html content=c footer=f %}
 
@@ -184,7 +186,7 @@ A mesh is used to determine how obscured a target is. PhysX raycasts are very ef
 Houdini procedurally generates a mesh using the forest masks that we use for procedural vegetation placement.
 The masks are vectorized, extruded, & the triangle count is reduced to reasonable amounts (<10,000 tris).
 
-{% capture c %}{% include image.html src="content\GHPC\Vision Collider.jpg" inline="" w=1905 h=893 %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Vision Collider.jpg" inline=1 w=1905 h=893 %}{% endcapture %}
 {% capture f %}Red is the invisible mesh. This prevents AI from seeing through forests.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
@@ -211,12 +213,12 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content/BH.gif" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content/BH.gif" inline=1 %}{% endcapture %}
 		{% capture f %}<a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm reduces # of calculations by simulating clumps of bodies as one (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:475px" %}
 	</div>
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content/nbody.gif" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content/nbody.gif" inline=1 %}{% endcapture %}
 		{% capture f %}Multi-threaded, <span class="tooltip" tip="Keeping memory access grouped together. Extremely important for high performance code.">cache-coherent</span>, <span class="tooltip" tip="Unity's new low-level C# compiler that attempts to convert code to a more parallel form (vectorization).">Burst compiled</span>, brute-force approach. For 4096 bodies, compared to the unoptimized starting point, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency). PhysX collisions are now the bottleneck. {% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:390px" %}
 	</div>
@@ -225,33 +227,33 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 [Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional <span class="tooltip" tip="Drawing images using trangles to represent objects, as any shape can be made given enough triangles.">[triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia")</span>, but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.** All renderers here were made from scratch in Unity running on a GTX 1070 Ti without the use of RTX.
 
-{% capture c %}{% include image.html src="content/RT.jpg" href="content/RT.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content/RT.jpg" href="content/RT.png" inline=1 %}{% endcapture %}
 {% capture f %}Traditional lights are simulated as "point" sources, meaning they are infinetly small & cast sharp shadows (rare in reality). Raytracing can properly simulate light sources with shape & size, creating soft shadow <a href="https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra#/media/File:Diagram_of_umbra,_penumbra_&_antumbra.png" >penumbra</a>.{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:850px" %}
 {% include video.html src="content/soft.mp4" %}
 
 {% capture h %}<strong><a href="https://en.wikipedia.org/wiki/Path_tracing" title="wikipedia">Pathtracing</a></strong> is an extension of raytracing where every collision "bounces" the light ray. When a ray hits a mirror, a ray is reflected. An impefect mirror defocuses the ray into a cone (blurry reflection). A white wall defocuses the ray across a hemisphere. These bounces results in a grainy image when too few rays are used, but given enough time the result is a near perfect simulation of light.{% endcapture %}
-{% capture c %}{% include video.html src="content/PT.mp4" inline="" %}{% endcapture %}
+{% capture c %}{% include video.html src="content/PT.mp4" inline=1 %}{% endcapture %}
 {% capture f %}Notice the slightly blurry reflections, & indirect illumination of the sphere’s dark side from light bouncing off the ground.{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
-{% capture c %}{% include image.html src="content/raymacher1_small.jpg" href="content/raymacher1.png" inline="" %}{% endcapture %}
+{% capture c %}{% include image.html src="content/raymacher1_small.jpg" href="content/raymacher1.png" inline=1 %}{% endcapture %}
 {% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<strong><a href="/content/raymarch_offline.png">extreme non-realtime example</a></strong>).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 ## Reverse Engineering - <span class="tooltip" tip="AAA 2011 first-person-shooter game, revolutionary for its graphics at the time">Battlefield 3</span>
 ***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
 
-{% capture c %}{% include compare.html a="content\Reverse Engineer\BF3\bf3_alley_ingame.jpg" b="content\Reverse Engineer\BF3\bf3_alley_blender.jpg" labelA="BF3" labelB="Blender" inline="" %}{% endcapture %}
+{% capture c %}{% include compare.html a="content\Reverse Engineer\BF3\bf3_alley_ingame.jpg" b="content\Reverse Engineer\BF3\bf3_alley_blender.jpg" labelA="BF3" labelB="Blender" inline=1 %}{% endcapture %}
 {% capture f %}An alley (from the <a href="https://youtu.be/HlOwEFJJBnA?t=441" title="YouTube">first campaign level</a>) imported into Blender without textures for analysis.{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_alley_blender_dof.jpg" href="content\Reverse Engineer\BF3\bf3_alley_blender_dof.png" inline="" style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_alley_blender_dof.jpg" href="content\Reverse Engineer\BF3\bf3_alley_blender_dof.png" inline=1 style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
 {% capture f %}Fully textured scene coming soon™{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 <center><strong>Render Analysis</strong></center>
-{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\alley_drawcalls.gif" inline="" style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\alley_drawcalls.gif" inline=1 style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
 {% capture f %}
 A wireframe is shown for each <span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcall</span> issued.
 BF3 makes heavy use of <span class="tooltip" tip="Drawing many copies of a mesh in one drawcall."><a href="https://docs.unity3d.com/Manual/GPUInstancing.html">instancing</a></span>, so most of the geometry is drawn in relatively few drawcalls (~300 here).
@@ -267,7 +269,7 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 		{% include figure.html content=c footer=f style="max-width:475px" %}
 	</div>
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\dxbc_normal.jpg" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\dxbc_normal.jpg" inline=1 %}{% endcapture %}
 		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to aproximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
 	</div>
@@ -279,12 +281,12 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 <center>The result is a near pixel perfect recreation of how the rifle appears ingame.</center>
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_desert.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_desert.png" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_desert.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_desert.png" inline=1 %}{% endcapture %}
 		{% capture f %}Desert camoflague variant, with every bumb & scratch exactly as ingame{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_black.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_black.png" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_black.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_black.png" inline=1 %}{% endcapture %}
 		{% capture f %}Ordinary black variant uncovered by bypassing the desert camo part of the node network{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
@@ -295,24 +297,24 @@ Ultimately the goal was to fully automate this process to work for all art on sc
 ## Reverse Engineering - ArmA Terrain
 ***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
 
-{% capture c %}{% include image.html src="content\Reverse Engineer\ArmA\utes.jpg" href="content\Reverse Engineer\ArmA\utes_4k.jpg" inline="" style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\Reverse Engineer\ArmA\utes.jpg" href="content\Reverse Engineer\ArmA\utes_4k.jpg" inline=1 style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
 {% capture f %}Work in progress port of ArmA 2's <a href="https://armedassault.fandom.com/wiki/Utes">Utes</a> map into Blender, by reverse engineering & extracting from the gamefiles (Enlarge for 4k).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 <center style="margin: 1em 0 1em 0">
 	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
-		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_satellite.jpg" inline="" a_style="width:100%; aspect-ratio:1;" %}
-		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_heightmap.jpg" inline="" a_style="width:100%; aspect-ratio:1;" %}
-		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_mask.jpg" inline="" a_style="width:100%; aspect-ratio:1;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_satellite.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_heightmap.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_mask.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 	</div>
 	<figcaption style="font-size:initial; background-color:white; max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
 </center>
 
 <center style="margin: 1em 0 1em 0">
 	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
-		{% include image.html src="content\Reverse Engineer\ArmA\stratis_mesh.jpg" href="content\Reverse Engineer\ArmA\stratis_mesh.png" inline="" a_style="width:100%; aspect-ratio:490/276;" %}
-		{% include image.html src="content\Reverse Engineer\ArmA\stratis_objects.jpg" href="content\Reverse Engineer\ArmA\stratis_objects.png" inline="" a_style="width:100%; aspect-ratio:490/276;" %}
-		{% include image.html src="content\Reverse Engineer\ArmA\stratis_bounding_boxes.jpg" href="content\Reverse Engineer\ArmA\stratis_bounding_boxes.png" inline="" a_style="width:100%; aspect-ratio:490/276;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\stratis_mesh.jpg" href="content\Reverse Engineer\ArmA\stratis_mesh.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\stratis_objects.jpg" href="content\Reverse Engineer\ArmA\stratis_objects.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
+		{% include image.html src="content\Reverse Engineer\ArmA\stratis_bounding_boxes.jpg" href="content\Reverse Engineer\ArmA\stratis_bounding_boxes.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 	</div>
 	<figcaption style="font-size:initial; background-color:white;"><em>Terrain heightmap as a mesh, followed by bounding boxes of all the objects on the map (to debug before replacing with models).</em></figcaption>
 </center>
@@ -326,17 +328,17 @@ Fully procedurally modeled & textured using [Blender](https://www.blender.org/fe
 Fully procedurally modeled & textured using World Machine's erosion simulation.
 {% include image.html src="content\Art\WM_small.jpg" href="content\Art\WM.jpg" style="width:100%; aspect-ratio: 16/9;" %}
 ### Planetary
-{% capture c %}{% include image.html src="content\Art\earf3.png" href="content\Art\earf3.png" inline="" style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\Art\earf3.png" href="content\Art\earf3.png" inline=1 style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
 {% capture f %}Earth (Realistic){% endcapture %}
 {% include figure.html content=c footer=f %}
 <div style="display:flex; flex-wrap:wrap; justify-content:space-between">
 	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\Art\earth_small.jpg" href="content\Art\earth.jpg" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Art\earth_small.jpg" href="content\Art\earth.jpg" inline=1 %}{% endcapture %}
 		{% capture f %}Earth{% endcapture %}
 		{% include figure.html content=c footer=f %}
 	</div>
 	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include image.html src="content\Art\orbit.gif" inline="" %}{% endcapture %}
+		{% capture c %}{% include image.html src="content\Art\orbit.gif" inline=1 %}{% endcapture %}
 		{% capture f %}Retro Vector Orbit{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:480px" %}
 	</div>
