@@ -10,26 +10,26 @@
         text-align: center;
         color: white;
         overflow: hidden;
-        img {
-            transition: .25s ease;
-            display: block;
-            object-fit: cover;
-            height: 100%;
-            background-color: rgb(16,16,16);
-        }
-        img:hover {
-            filter: brightness(75%) saturate(0.5);
-        }
-        .cat_text {
-            position: absolute;
-            top: 50%; 
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 40px;
-            font-weight: bold;
-            text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
-            pointer-events: none;
-        }
+    }
+    .cat_text {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5cqmin;
+        font-weight: bold;
+        text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+        pointer-events: none;
+    }
+    img {
+        transition: .25s ease;
+        display: block;
+        object-fit: cover;
+        height: 100%;
+        background-color: rgb(16,16,16);
+    }
+    img:hover {
+        filter: brightness(75%) saturate(0.5);
     }
     .static {
         position: absolute;
