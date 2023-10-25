@@ -78,17 +78,17 @@ jasondeacutis@gmail.com<br>
 *Early Access "Cold War Gone Hot" tank simulation game.<br>GHPC is short for "Gunner, use High Explosive Anti Tank round on enemy Personnel Carrier!" (yes, its nerdy)*
 
 <div style="display:grid; grid-template-columns: 50% 50%; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
-	{% include image.html src="content\GHPC\T-55s.jpg" href="content\GHPC\T-55A.png" inline="" %}
-	{% include image.html src="content\GHPC\Night Fire.jpg" href="content\GHPC\germany2.png" inline="" %}
-	{% include image.html src="content\GHPC\T-72s.jpg" href="content\GHPC\T-72.png" inline="" %}
-	{% include image.html src="content\GHPC\Abrams.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline="" %}
+	{% include image.html src="content\GHPC\T-55s.jpg" inline="" %}
+	{% include image.html src="content\GHPC\Night Fire.jpg" inline="" %}
+	{% include image.html src="content\GHPC\T-72s.jpg" inline="" %}
+	{% include image.html src="content\GHPC\Abrams.jpg" inline="" %}
 </div>
 
 ## Reticles
 Gunsight crosshairs are integrated with the ballistics system, elements are procedurally placed to ensure projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflex reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">reticles</span> were meticulously recreated from their real-world counterparts, using written & photographic reference (often difficult to find).
 
-{% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" style="width=100%; aspect-ratio:980/490" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" w=980 h=490 %}{% endcapture %}
 {% capture f %}
 	Reticles for 
 	<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="50s Russian Main Battle Tank">T-55</a>, 
@@ -107,12 +107,12 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% capture f %}Nearly every gunsight since WW2 has an internal light for use at night<br>(<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are actually white!</a>).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
-{% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline="" style="width=100%; aspect-ratio:980/729" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline="" w=980 h=729 %}{% endcapture %}
 {% capture f %}Russian T-55 gunsight with labels{% endcapture %}
 {% include figure.html content=c footer=f style="max-width:720px" %}
 
 {% capture h %}<a href="https://en.wikipedia.org/wiki/Stadiametric_rangefinding" title="wikipedia">Stadiametric rangefinding</a> allows quickly determining the distance of a target based on its apparent size.{% endcapture %}
-{% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline="" style="max-width:605px; aspect-ratio:605/200" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Reticles\stadia_small.jpg" href="content\GHPC\Reticles\stadia.png" inline="" w=605 h=200 %}{% endcapture %}
 {% capture f %}<a href="https://en.wikipedia.org/wiki/T-72" title="wikipedia">T-72</a> stadia showing a US <a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3</a> at 500 meter distance increments{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
@@ -160,11 +160,11 @@ There's a lot of room for optimization, but there was no need given how fast it 
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Takes into account the map's global coordinates. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
 
-{% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline="" style="max-width:702px; aspect-ratio:702/394" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline="" w=702 h=394 %}{% endcapture %}
 {% capture f %}Sunpath over the course of a year{% endcapture %}
 {% include figure.html content=c footer=f %}
 
-{% capture c %}{% include image.html src="content\GHPC\Sky\moon2.gif" inline="" style="max-width:615px; aspect-ratio:615/122" %}{% endcapture %}
+{% capture c %}{% include image.html src="content\GHPC\Sky\moon2.gif" inline="" w=615 h=122 %}{% endcapture %}
 {% capture f %}Moon phase cycle {% endcapture %}
 {% include figure.html content=c footer=f %}
 
@@ -185,8 +185,8 @@ Developed the first iteration of the driver AI, allowing vehicles to navigate to
 {% include compare.html a="content\CUP\A2.jpg" b="content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" style="width=100%; aspect-ratio:16/9" %}
 ## Blender Material Tool
 Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for [Blender](https://www.blender.org/features/).
-{% include image.html src="content/CUP/barracks.jpg" style="width:100%; aspect-ratio:980/466" %}
-{% include image.html src="content/CUP/rvmat.jpg" href="content/CUP/rvmat.png" style="width:100%; aspect-ratio:980/430" %}
+{% include image.html src="content/CUP/barracks.jpg" w=980 h=466 %}
+{% include image.html src="content/CUP/rvmat.jpg" href="content/CUP/rvmat.png" w=980 h=430 %}
 A very nice optimization of ArmA's material system is the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of CPU <span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcalls</span>, especially when there are hundreds of models on screen.
 {% include compare.html a="content\CUP\ATC-multi.jpg" b="content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" style="width=100%; aspect-ratio:980/495" %}
 
