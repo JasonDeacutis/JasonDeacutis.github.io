@@ -178,6 +178,16 @@ Developed the first iteration of the driver AI, allowing vehicles to navigate to
 	</video>
 </p>
 
+## AI Vision Occlusion
+Developed the first iteration of the AI vision occlusion.
+A mesh is used to determine how obscured a target is. PhysX raycasts are very efficient for static meshes, so this actually turned out to be very performant.
+Houdini procedurally generates a mesh using the forest masks that we use for procedural vegetation placement.
+The masks are vectorized, extruded, & the triangle count is reduced to reasonable amounts (<10,000 tris).
+
+{% capture c %}{% include image.html src="content\GHPC\Vision Collider.jpg" inline="" w=1905 h=893 %}{% endcapture %}
+{% capture f %}Red is the invisible mesh. This prevents AI from seeing through forests.{% endcapture %}
+{% include figure.html content=c footer=f %}
+
 # ArmA 3 - [Community Upgrade Project](https://steamcommunity.com/workshop/filedetails/?id=583575232 "Steam Workshop")
 *Crowd-sourced mod to port content to Arma 3 from preceding games (military sandbox).*
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
