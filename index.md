@@ -91,7 +91,6 @@ Integrated AI into our physics vehicle controller, allowing vehicles to autonomo
 		<source src="content/GHPC/pathfinding.mp4" type="video/mp4">
 	</video>
 </p>
-{% include embed-youtube.html id="PD_lZp6V75Q" %}
 
 ## Reticle System
 Dynamic gunsight crosshairs integrated with the ballistics system, ensuring projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
@@ -145,23 +144,6 @@ Surface details are obtained using a semi-physically-based light model: surface 
 	</div>
 	<figcaption style="font-size:initial; background-color:white"><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
 </center>
-
-{% capture c %}{% include compare.html a="content\GHPC\FLIR\vehicles_visible.jpg" b="content\GHPC\FLIR\vehicles_FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.45" inline="" %}{% endcapture %}
-{% capture f %}Visible light vs FLIR. Notice one vehicle’s engine (<a href="https://en.wikipedia.org/wiki/T-54/T-55" title="wikipedia">T-55</a>) has been running for a while, & the sky appears darker.{% endcapture %}
-{% include figure.html content=c footer=f %}
-
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px;">
-		{% capture c %}{% include compare.html a="content\GHPC\FLIR\UAZ-VIS.jpg" b="content\GHPC\FLIR\UAZ-FLIR.jpg" labelA="Visible" labelB="FLIR" pos="0.5" inline="" %}{% endcapture %}
-		{% capture f %}Demonstrating the mirrors of a Russian <a href="https://en.wikipedia.org/wiki/UAZ-469" title="wikipedia">UAZ</a> approximately reflect the colder background temperature.{% endcapture %}
-		{% include figure.html content=c footer=f style="max-width:475px" %}
-	</div>
-	<div style="width:max-content; margin:auto; margin-top:0px;">
-		{% capture c %}{% include compare.html a="content\GHPC\FLIR\leslie-cube-visible.jpg" b="content\GHPC\FLIR\leslie-cube-FLIR.jpg" labelA="Visible" labelB="FLIR" orientation="vertical" inline="" %}{% endcapture %}
-		{% capture f %}A <a href="https://en.wikipedia.org/wiki/Leslie_cube" title="wikipedia">Leslie Cube</a>, where all sides are 56°C (132°F) but some <strong>appear</strong> colder than others, demonstrating surface materials reflect IR differently.{% endcapture %}
-		{% include figure.html content=c footer=f style="max-width:490px" %}
-	</div>
-</div>
 
 ## Day-Night Cycle
 Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.

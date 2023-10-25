@@ -1,2 +1,2 @@
-cd C:\Users\super\Desktop\JasonDeacutis.github.io
+cd %~dp0
 bundle exec jekyll serve
