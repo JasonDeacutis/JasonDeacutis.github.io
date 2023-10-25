@@ -75,25 +75,33 @@ jasondeacutis@gmail.com<br>
 	- [Planetary](/#planetary)
 
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
-*In development tank combat simulation game, a cross between accessible arcade & military simulation. Translates to the crew command  "Gunner, use High Explosive Anti Tank ammunition on enemy Personnel Carrier!" (yes, its nerdy)*
+*Early Access "Cold War Gone Hot" tank simulation game.<br>GHPC is short for "Gunner, use High Explosive Anti Tank round on enemy Personnel Carrier!" (yes, its nerdy)*
 
+<!--
 <div style="display:grid; grid-template-columns: 50% 50%; grid-gap: 1px; background-color:black">
 	{% include image.html src="content\GHPC\T-55A.jpg" href="content\GHPC\T-55A.png" inline="" %}
 	{% include image.html src="content\GHPC\germany2.jpg" href="content\GHPC\germany2.png" inline="" %}
 	{% include image.html src="content\GHPC\T-72.jpg" href="content\GHPC\T-72.png" inline="" %}
 	{% include image.html src="content\GHPC\FLIR\m60a3_4.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline="" %}
 </div>
+-->
+<div style="display:grid; grid-template-columns: 50% 50%; grid-gap: 1px; background-color:black">
+	{% include image.html src="content\GHPC\T-55s.jpg" href="content\GHPC\T-55A.png" inline="" %}
+	{% include image.html src="content\GHPC\Night Fire.jpg" href="content\GHPC\germany2.png" inline="" %}
+	{% include image.html src="content\GHPC\T-72s.jpg" href="content\GHPC\T-72.png" inline="" %}
+	{% include image.html src="content\GHPC\Abrams.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline="" %}
+</div>
 
-## Vehicle Driver AI
-Integrated AI into our physics vehicle controller, allowing vehicles to autonomously navigate to a destination while avoiding obstacles.
+## Driver AI
+Developed the first iteration of the driver AI, allowing vehicles to navigate to a destination while avoiding obstacles.
 <p>
 	<video controls autoplay playsinline loop muted poster="content/loading.png" style="width:100%">
 		<source src="content/GHPC/pathfinding.mp4" type="video/mp4">
 	</video>
 </p>
 
-## Reticle System
-Dynamic gunsight crosshairs integrated with the ballistics system, ensuring projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflected reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
+## Reticles
+Gunsight crosshairs are integrated with the ballistics system, elements are procedurally placed to ensure projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflex reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">reticles</span> were meticulously recreated from their real-world counterparts, using written & photographic reference (often difficult to find).
 
 {% capture c %}{% include image.html src="content\GHPC\Reticles\reticles_small.jpg" href="content\GHPC\Reticles\reticles.png" inline="" %}{% endcapture %}
@@ -112,7 +120,7 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 <!--<center>{% include embed-youtube.html id="9ALBTiN3ifQ" options="start=39; end=61" %}</center>-->
 
 {% capture c %}{% include compare.html a="content\GHPC\Reticles\t72-day.jpg" b="content\GHPC\Reticles\t72-night.jpg" labelA="Day" labelB="Night" pos="0.55" %}{% endcapture %}
-{% capture f %}Nearly every gunsight since WW2 has an internal light to illuminate the reticle at night (<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are white</a>, they just appear black without light).{% endcapture %}
+{% capture f %}Nearly every gunsight since WW2 has an internal light for use at night<br>(<a href="https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg" title="reticle plane">reticles are actually white!</a>).{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:600px" %}
 
 {% capture c %}{% include image.html src="content\GHPC\Reticles\t55_labeled_small.jpg" href="content\GHPC\Reticles\t55_labeled.jpg" inline="" %}{% endcapture %}
@@ -125,9 +133,7 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% include figure.html header=h content=c footer=f %}
 
 ## Thermal Imaging (FLIR)
-***Disclaimer:** Work in progress, many features are still missing and are subject to change.*
-
-Approximation of [FLIR](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles and infantry.
+Approximation of [Infrared](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles and infantry.
 Vehicle engines, gun barrels, & tracks are heat sources that can change temperature independently. In addition, the sun's position is used to determine the ambient environement temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
