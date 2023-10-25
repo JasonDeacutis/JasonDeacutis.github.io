@@ -133,7 +133,7 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 {% include figure.html header=h content=c footer=f %}
 
 ## Thermal Imaging (FLIR)
-Approximation of [Infrared](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles and infantry.
+Approximation of [Infrared](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles & infantry.
 Vehicle engines, gun barrels, & tracks are heat sources that can change temperature independently. In addition, the sun's position is used to determine the ambient environement temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
@@ -151,8 +151,34 @@ Surface details are obtained using a semi-physically-based light model: surface 
 	<figcaption style="font-size:initial; background-color:white"><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
 </center>
 
+## SDF Maps
+<p>
+2D map rendering is <i>harder than you'd think</i>. GHPC has terrains over 8x8km in size & players need a zoomable map.<br>
+A static image needs to be very high resolution, it takes a lot of space, & even still it doesn't support a lot of zooming.<br>
+A mesh based map allows infinite zoom, but may be difficult to generate or require level of detail for performance.<br>
+</p>
+<p>
+<b>Signed Distance Fields</b> compromise & allow low resolution textures to encode vector graphics that can be infinetly zoomed.
+They enable easy styling of borders & anti aliasing cheaper than traditional triangle MSAA.
+The SDFs are procedurally generated based on the forest, road, & building masks that we already use for vegetation generation & terrain materials.
+There's a lot of room for optimization, but there was no need given how fast it was already running (<1ms).
+</p>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
+	<div style="width:max-content; margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html src="content\GHPC\SDF\contour.gif" inline="" %}{% endcapture %}
+		{% capture f %}Anti-aliased contour lines rendered directly from the heightmap file.{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:490px" %}
+	</div>
+	<div style="margin:auto; margin-top:0px;">
+		{% capture c %}{% include image.html src="content\GHPC\SDF\map.gif" inline="" %}{% endcapture %}
+		{% capture f %}Multiple SDFs allow multiple colors & are combined with shaded relief.{% endcapture %}
+		{% include figure.html content=c footer=f style="max-width:490px" %}
+	</div>
+</div>
+
 ## Day-Night Cycle
-Realtime sky simulation, based on a simplified solar system model. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
+Realtime sky simulation, based on a simplified solar system model. Takes into account the map's global coordinates. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
 
 {% capture c %}{% include image.html src="content\GHPC\Sky\sunpath_small.jpg" href="content\GHPC\Sky\sunpath.png" inline="" %}{% endcapture %}
 {% capture f %}Sunpath over the course of a year{% endcapture %}
@@ -265,14 +291,14 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
 </div>
-Ultimately the goal was to fully automate this process to work for all art on screen, but developing the automation proved to be time consuming and I never got around to finishing it.
+Ultimately the goal was to fully automate this process to work for all art on screen, but developing the automation proved to be time consuming & I never got around to finishing it.
 
 
 ## Reverse Engineering - ArmA Terrain
 ***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
 
 {% capture c %}{% include image.html src="content\Reverse Engineer\ArmA\utes.jpg" href="content\Reverse Engineer\ArmA\utes_4k.jpg" inline="" %}{% endcapture %}
-{% capture f %}Work in progress port of ArmA 2's <a href="https://armedassault.fandom.com/wiki/Utes">Utes</a> map into Blender, by reverse engineering and extracting from the gamefiles (Enlarge for 4k).{% endcapture %}
+{% capture f %}Work in progress port of ArmA 2's <a href="https://armedassault.fandom.com/wiki/Utes">Utes</a> map into Blender, by reverse engineering & extracting from the gamefiles (Enlarge for 4k).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 <center style="margin: 1em 0 1em 0">
@@ -281,7 +307,7 @@ Ultimately the goal was to fully automate this process to work for all art on sc
 		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_heightmap.jpg" inline="" %}
 		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_mask.jpg" inline="" %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white; max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, and surface type textures extracted and stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
+	<figcaption style="font-size:initial; background-color:white; max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
 </center>
 
 <center style="margin: 1em 0 1em 0">
