@@ -227,18 +227,18 @@ A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia
 ## Realtime Raytracer, Pathtracer, & Raymarcher
 [Raytracing](https://en.wikipedia.org/wiki/Ray_tracing_(graphics) "wikipedia"), [Pathtracing](https://en.wikipedia.org/wiki/Path_tracing "wikipedia"), & [Raymarching](https://youtu.be/svLzmFuSBhk "YouTube") all form images by simulating rays of light entering a camera for every pixel. They're compulationally expensive compared to traditional <span class="tooltip" tip="Drawing images using trangles to represent objects, as any shape can be made given enough triangles.">[triangle rasterization](https://en.wikipedia.org/wiki/Rasterisation "wikipedia")</span>, but they can handle much more complicated graphical effects. **They are not necessarily challenging to program, but they are difficult to optimize.** All renderers here were made from scratch in Unity running on a GTX 1070 Ti without the use of RTX.
 
-{% capture c %}{% include image.html src="content/RT.jpg" href="content/RT.png" inline=1 %}{% endcapture %}
+{% capture c %}{% include image.html src="content/Shader/Raytracer/RT.jpg" href="content/Shader/Raytracer/RT.png" inline=1 %}{% endcapture %}
 {% capture f %}Traditional lights are simulated as "point" sources, meaning they are infinetly small & cast sharp shadows (rare in reality). Raytracing can properly simulate light sources with shape & size, creating soft shadow <a href="https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra#/media/File:Diagram_of_umbra,_penumbra_&_antumbra.png" >penumbra</a>.{% endcapture %}
 {% include figure.html content=c footer=f footerStyle="max-width:850px" %}
-{% include video.html src="content/soft.mp4" %}
+{% include video.html src="content/Shader/Raytracer/soft.mp4" %}
 
 {% capture h %}<strong><a href="https://en.wikipedia.org/wiki/Path_tracing" title="wikipedia">Pathtracing</a></strong> is an extension of raytracing where every collision "bounces" the light ray. When a ray hits a mirror, a ray is reflected. An impefect mirror defocuses the ray into a cone (blurry reflection). A white wall defocuses the ray across a hemisphere. These bounces results in a grainy image when too few rays are used, but given enough time the result is a near perfect simulation of light.{% endcapture %}
-{% capture c %}{% include video.html src="content/PT.mp4" inline=1 %}{% endcapture %}
+{% capture c %}{% include video.html src="content/Shader/Raytracer/PT.mp4" inline=1 %}{% endcapture %}
 {% capture f %}Notice the slightly blurry reflections, & indirect illumination of the sphere’s dark side from light bouncing off the ground.{% endcapture %}
 {% include figure.html header=h content=c footer=f %}
 
-{% capture c %}{% include image.html src="content/raymacher1_small.jpg" href="content/raymacher1.png" inline=1 %}{% endcapture %}
-{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<strong><a href="/content/raymarch_offline.png">extreme non-realtime example</a></strong>).{% endcapture %}
+{% capture c %}{% include image.html src="content/Shader/Raymarcher/raymacher1_small.jpg" href="content/Shader/Raymarcher/raymacher1.png" inline=1 %}{% endcapture %}
+{% capture f %}<strong><a href="https://youtu.be/svLzmFuSBhk" title="YouTube">Raymarching</a></strong> has a high upfront cost, but it can also achieve complexity otherwise impossible with triangles (<strong><a href="content/Shader/Raymarcher/raymarch_offline.png">extreme non-realtime example</a></strong>).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 ## Reverse Engineering - <span class="tooltip" tip="AAA 2011 first-person-shooter game, revolutionary for its graphics at the time">Battlefield 3</span>

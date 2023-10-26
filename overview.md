@@ -16,7 +16,7 @@
         top: 50%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 5cqmin;
+        font-size: 4.5cqmin;
         font-weight: bold;
         text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
         pointer-events: none;
