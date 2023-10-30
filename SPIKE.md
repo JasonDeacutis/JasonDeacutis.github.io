@@ -65,7 +65,7 @@ connected to the aircraft's data bus. The actual cockpit display & controls are 
         <figcaption>Old OSD</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/SPIKE old font.png" style="width:466px; height:58px; image-rendering:pixelated; display:block; margin:auto; background-color:#808080">
+        <img src="content/SPIKE/SPIKE old font.png" style="width:466px; height:58px; image-rendering:pixelated; display:block; margin:auto; background-color:rgb(200,200,200)">
         <figcaption>Old font reconstructed from videos</figcaption>
     </figure>
 </div>
