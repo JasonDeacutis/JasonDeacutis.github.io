@@ -5,7 +5,7 @@
         padding: 4px;
         background-color: black;
     }
-    .cat_container {
+    .categories > div {
         position: relative;
         text-align: center;
         color: white;
@@ -54,7 +54,7 @@ Test
 </div>
 <p>
 
-<!-- <div class="cat_container">
+<!-- <div>
     <a href="index" title="GHPC">
         <img src="content\GHPC\T-55s.jpg">
     </a>
@@ -62,50 +62,50 @@ Test
 </div> -->
 
 <div class="categories" style="display:grid; grid-template-columns: auto auto;">
-    <div class="cat_container">
+    <div>
         <a href="index" title="GHPC">
             <img src="content\GHPC\T-55s.jpg">
         </a>
         <div class="cat_text">GHPC</div>
     </div>
-    <div class="cat_container">
+    <div>
         <a href="index" title="GHPC">
             <img src="content\GHPC\Night Fire.jpg">
         </a>
         <div class="cat_text">GHPC</div>
     </div>
-    <div class="cat_container">
+    <div>
         <a href="index" title="GHPC">
             <img src="content\GHPC\T-72s.jpg">
         </a>
         <div class="cat_text">GHPC</div>
     </div>
-    <div class="cat_container">
+    <div>
         <a href="index" title="GHPC">
             <img src="content\GHPC\Abrams.jpg">
         </a>
         <div class="cat_text">GHPC</div>
     </div>
-    <!-- <div class="cat_container">
+    <!-- <div>
         <a href="index" title="Photogrammetry">
             <img src="content\Scans\MLRS_normal.gif">
         </a>
         <div class="cat_text">Photogrammetry</div>
     </div> -->
-    <!-- <div class="cat_container">
+    <!-- <div>
         <a href="index" title="Photogrammetry">
             <img src="content\Scans\MLRS_normal_static.jpg" class="static">
             <img src="content\Scans\MLRS_normal.gif">
         </a>
         <div class="cat_text">Photogrammetry</div>
     </div> -->
-    <div class="cat_container">
+    <div>
         <a href="index" title="Photogrammetry">
             <img src="content\Scans\MLRS_normal_static.jpg">
         </a>
         <div class="cat_text">Photogrammetry</div>
     </div>
-    <div class="cat_container">
+    <div>
         <a href="index" title="3D Art">
             <img src="content\Art\an-prc-117g.png">
         </a>
