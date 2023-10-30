@@ -1,0 +1,24 @@
+.media_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.media_grid > * {
+    margin: auto;
+    margin-top: 0;
+    width: 485px;
+}
+.youtube {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+figure img {
+    display: block;
+}
+figure figcaption {
+    font-style: italic;
+    text-align: center;
+    vertical-align: top;
+    text-wrap: balance;
+}

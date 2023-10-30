@@ -1,30 +1,5 @@
 <head>
-	<style>
-    .media_grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
-    }
-    .media_grid > * {
-        margin: auto;
-        margin-top: 0;
-        width: 485px;
-    }
-    .youtube {
-        aspect-ratio: 16/9;
-        width: 100%;
-    }
-    figure img {
-        display: block;
-    }
-    figure figcaption {
-        font-style: italic;
-        text-align: center;
-        vertical-align: top;
-        text-wrap: balance;
-    }
-	</style>
+    <link rel="stylesheet" href="subject.css">
 </head>
 
 # [Inter-Coastal Electronics](https://www.faac.com/inter-coastal/) - SPIKE NLOS Simulator
@@ -41,31 +16,31 @@ connected to the aircraft's data bus. The actual cockpit display & controls are 
 
 <div class="media_grid">
     <figure>
-        <img src="content/SPIKE/Full Flight/1. prelaunch.gif">
+        <img src="/content/SPIKE/Full Flight/1. prelaunch.gif">
         <figcaption>Prelaunch on an Apache<br>The dashed box indicates unable to fire</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/Full Flight/2. launch.gif">
+        <img src="/content/SPIKE/Full Flight/2. launch.gif">
         <figcaption>Missile Launch. Small box indicates the current target destination, dots indicate ground track.</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/Full Flight/3. spike midflight.gif">
+        <img src="/content/SPIKE/Full Flight/3. spike midflight.gif">
         <figcaption>Operator can slew & zoom the camera while the autopilot flies.</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/Full Flight/4. manual warning.gif">
+        <img src="/content/SPIKE/Full Flight/4. manual warning.gif">
         <figcaption>Flashing indicates manual control is about to be entered.</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/Full Flight/5. terminal.gif">
+        <img src="/content/SPIKE/Full Flight/5. terminal.gif">
         <figcaption>Manual control mode, hitting a T-72 tank</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/old hud.gif">
+        <img src="/content/SPIKE/old hud.gif">
         <figcaption>Old OSD</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/SPIKE old font.png" style="width:466px; height:58px; image-rendering:pixelated; display:block; margin:auto; background-color:rgb(200,200,200)">
+        <img src="/content/SPIKE/SPIKE old font.png" style="width:466px; height:58px; image-rendering:pixelated; display:block; margin:auto; background-color:rgb(200,200,200)">
         <figcaption>Old font reconstructed from videos</figcaption>
     </figure>
 </div>
