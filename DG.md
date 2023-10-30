@@ -77,12 +77,22 @@ The best alternative was to tape a phone to the HoloLens, but this distorts the 
         ></iframe>
         <figcaption class="media_caption">Shooting virtual humvees in the backyard.</figcaption>
     </figure>
+    <figure>
+        <video autoplay playsinline loop muted style="width:100%; aspect-ratio:16/9; object-fit:cover; object-position: 0 50%; filter: saturate(75%)">
+            <source src="content/MR M240/MR Outdoor Vehicle.mp4" type="video/mp4">
+        </video>
+        <figcaption class="media_caption">A 3D scan of the backyard was used to ground the holograms & hide them behind walls.</figcaption>
+    </figure>
+    <figure>
+        <img src="content/MR M240/blob.gif">
+        <figcaption class="media_caption">Blob shadows are cheap but extremely important for grounding objects in MR.</figcaption>
+    </figure>
+    <figure>
+        <img src="content/MR M240/m240.gif">
+        <figcaption class="media_caption">M240's state comes in over ethernet at 60Hz.</figcaption>
+    </figure>
+    <figure>
+        <img src="content/MR M240/ammo_cover.gif">
+        <figcaption class="media_caption">This mesh is used to prevent X-ray vision through the gun, so its important that it matches as closely as possible to the physical gun.</figcaption>
+    </figure>
 </div>
-<p></p>
-
-<figure style="max-width:485px; margin:auto">
-    <video autoplay playsinline loop muted style="width:100%; aspect-ratio:1; object-fit:cover; object-position: 0 50%; filter: saturate(75%)">
-        <source src="content/MR M240/MR Outdoor Vehicle.mp4" type="video/mp4">
-    </video>
-    <figcaption class="media_caption">A 3D scan of the backyard was used to ground the holograms & hide them behind walls.</figcaption>
-</figure>
