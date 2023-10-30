@@ -15,7 +15,10 @@
         aspect-ratio: 16/9;
         width: 100%;
     }
-    .media_caption {
+    figure img {
+        display: block;
+    }
+    figure figcaption {
         font-style: italic;
         text-align: center;
         vertical-align: top;
@@ -39,31 +42,31 @@ connected to the aircraft's data bus. The actual cockpit display & controls are 
 <div class="media_grid">
     <figure>
         <img src="content/SPIKE/Full Flight/1. prelaunch.gif">
-        <figcaption class="media_caption">Prelaunch on an Apache<br>The dashed box indicates unable to fire</figcaption>
+        <figcaption>Prelaunch on an Apache<br>The dashed box indicates unable to fire</figcaption>
     </figure>
     <figure>
         <img src="content/SPIKE/Full Flight/2. launch.gif">
-        <figcaption class="media_caption">Missile Launch. Small box indicates the current target destination, dots indicate ground track.</figcaption>
+        <figcaption>Missile Launch. Small box indicates the current target destination, dots indicate ground track.</figcaption>
     </figure>
     <figure>
         <img src="content/SPIKE/Full Flight/3. spike midflight.gif">
-        <figcaption class="media_caption">Operator can slew & zoom the camera while the autopilot flies.</figcaption>
+        <figcaption>Operator can slew & zoom the camera while the autopilot flies.</figcaption>
     </figure>
     <figure>
         <img src="content/SPIKE/Full Flight/4. manual warning.gif">
-        <figcaption class="media_caption">Flashing indicates manual control is about to be entered.</figcaption>
+        <figcaption>Flashing indicates manual control is about to be entered.</figcaption>
     </figure>
     <figure>
         <img src="content/SPIKE/Full Flight/5. terminal.gif">
-        <figcaption class="media_caption">Manual control mode, hitting a T-72 tank</figcaption>
+        <figcaption>Manual control mode, hitting a T-72 tank</figcaption>
     </figure>
     <figure>
-        <img src="content/SPIKE/old hud.gif" style="display:block; margin:auto">
-        <figcaption class="media_caption">Old OSD</figcaption>
+        <img src="content/SPIKE/old hud.gif">
+        <figcaption>Old OSD</figcaption>
     </figure>
     <figure>
         <img src="content/SPIKE/SPIKE old font.png" style="width:466px; height:58px; image-rendering:pixelated; display:block; margin:auto; background-color:#808080">
-        <figcaption class="media_caption">Old font reconstructed from videos</figcaption>
+        <figcaption>Old font reconstructed from videos</figcaption>
     </figure>
 </div>
 
