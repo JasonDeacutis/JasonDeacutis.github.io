@@ -2,23 +2,26 @@
     <link rel="stylesheet" href="subject.css">
 	<style>
     .media_grid {
-        gap: 0px;
+        gap: 4px;
     }
     .media_grid > * {
-        width: 490px;
+        width: 486px;
     }
     img {
+        border-radius: 8px;
+    }
+    a > img {
 		transition: .25s ease;
 	}
-	img:hover {
+	a > img:hover {
 		filter: brightness(75%);
 	}
 	</style>
 </head>
 
 # Atmosphere Shader
-Realtime atmosphere shader simulating scattering in Unity Engine.
-Both realistic and stylized results can be achieved.
+Realtime atmosphere shader written in HLSL simulating scattering in Unity Engine.
+Both realistic & stylized results can be achieved.
 Optionally supports casting shadows onto the atmosphere.
 
 <div class="media_grid">
@@ -51,3 +54,8 @@ Optionally supports casting shadows onto the atmosphere.
         <figcaption>Extreme example showing shadow casting on the atmosphere itself</figcaption>
     </figure>
 </div>
+
+<figure>
+    <img src="/content/Shader/Atmosphere/scatter_diagram.png">
+    <figcaption>Along each pixel's ray, multiple points are evaluated to see how much light they recieve. These are combined to determine the final pixel color.</figcaption>
+</figure>
