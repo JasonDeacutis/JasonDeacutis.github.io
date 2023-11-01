@@ -20,7 +20,7 @@
 </head>
 
 # Atmosphere Shader
-Realtime atmosphere shader written in HLSL simulating scattering in Unity Engine.
+Realtime atmosphere shader written in HLSL simulating light scattering in Unity Engine.
 Both realistic & stylized results can be achieved.
 Optionally supports casting shadows onto the atmosphere.
 

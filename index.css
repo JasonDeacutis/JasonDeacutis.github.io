@@ -1,3 +1,15 @@
+.picture_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+    background-color: black;
+}
+figure figcaption {
+    font-style: italic;
+    text-align: center;
+    vertical-align: top;
+    text-wrap: balance;
+}
 .tooltip {
     display: inline;
     position: relative;
@@ -15,7 +27,7 @@
     content: attr(tip);
     text-align: center;
     font-size: 16px;
-    font-weight:normal;
+    font-weight: normal;
     width: max-content;
     max-width: min(500px, 50vw);
 }

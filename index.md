@@ -1,60 +1,36 @@
 <head>
+	<!-- Slide Comparison -->
 	<link href="twentytwenty/css/twentytwenty.css" rel="stylesheet" type="text/css" />
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<script src="twentytwenty/js/jquery.event.move.js"></script>
 	<script src="twentytwenty/js/jquery.twentytwenty.js"></script>
 	<script>$(window).on('load', function() { $(".twentytwenty-container").twentytwenty({move_with_handle_only:0, click_to_move:1}); });</script>
-	
+	<!-- Code syntax highlighting -->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-	
+	<link rel="stylesheet" href="/index.css">
 	<style>
-	.tooltip {
-		display: inline;
-		position: relative;
-		border-bottom: 1px dotted black;
-	}
-	.tooltip:hover:after {
-		position: absolute;
-		bottom: 150%;
-		left: 50%;
-		transform: translateX(-50%);
-		background: rgba(0,0,0,0.9);
-		color: white;
-		border-radius: 6px;
-		padding: 6px;
-		content: attr(tip);
-		text-align: center;
-		font-size: 16px;
-		font-weight:normal;
-		width: max-content;
-		max-width: min(500px, 50vw);
-	}
-	.tooltip:hover:before {
-		position: absolute;
-		bottom: 150%;
-		left: 50%;
-		transform: translate(-50%, 100%);
-		border: solid;
-		border-color: rgba(0,0,0,0.9) transparent;
-		border-width: 6px 6px 0px;
-		content: "";
-	}
-	
-	img {
-		transition: .25s ease;
-	}
-	img:hover {
-		filter: brightness(75%);
-	}
+		.media_grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.media_grid > * {
+			margin: auto;
+			margin-top: 0;
+		}
+		iframe[seamless]{
+			background-color: transparent;
+			border: 0px none transparent;
+			padding: 0px;
+			overflow: hidden;
+		}
 	</style>
 </head>
 
 Jason Deacutis<br>
 jasondeacutis@gmail.com<br>
-
-<!-- [Overview](overview) -->
 
 ## Outline
 - Gunner, HEAT, PC! (GHPC)
@@ -79,7 +55,7 @@ jasondeacutis@gmail.com<br>
 # [Gunner, HEAT, PC! (GHPC)](https://gunnerheatpc.com/ "https://gunnerheatpc.com/")
 *Early Access "Cold War Gone Hot" tank simulation game.<br>GHPC is short for "Gunner, use High Explosive Anti Tank round on enemy Personnel Carrier!" (yes, its nerdy)*
 
-<div style="display:grid; grid-template-columns: auto auto; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
+<div class="picture_grid">
 	{% include image.html src="content\GHPC\T-55s.jpg" inline=1 %}
 	{% include image.html src="content\GHPC\Night Fire.jpg" inline=1 %}
 	{% include image.html src="content\GHPC\T-72s.jpg" inline=1 %}
@@ -124,13 +100,13 @@ Vehicle engines, gun barrels, & tracks are heat sources that can change temperat
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: auto auto; grid-gap: 1px; background-color:black; width=100%; aspect-ratio:16/9">
+	<div class="picture_grid">
 		{% include image.html src="content\GHPC\FLIR\m60a3_1.jpg" href="content\GHPC\FLIR\m60a3_1.png" inline=1 %}
 		{% include image.html src="content\GHPC\FLIR\m60a3_3.jpg" href="content\GHPC\FLIR\m60a3_3.png" inline=1 %}
 		{% include image.html src="content\GHPC\FLIR\m60a3_5.jpg" href="content\GHPC\FLIR\m60a3_5.png" inline=1 %}
 		{% include image.html src="content\GHPC\FLIR\m60a3_4.jpg" href="content\GHPC\FLIR\m60a3_4.png" inline=1 %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white"><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
+	<figcaption><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="content\GHPC\FLIR\TTS-real.png">real sources</a> (early WIP).</em></figcaption>
 </center>
 
 ## SDF Maps
@@ -146,13 +122,13 @@ The SDFs are procedurally generated based on the forest, road, & building masks 
 There's a lot of room for optimization, but there was no need given how fast it was already running (<1ms).
 </p>
 
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px;">
+<div class="media_grid">
+	<div>
 		{% capture c %}{% include image.html src="content\GHPC\SDF\contour.gif" inline=1 style="width=100%; aspect-ratio:1" %}{% endcapture %}
 		{% capture f %}Anti-aliased contour lines rendered directly from the heightmap file.{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
 	</div>
-	<div style="margin:auto; margin-top:0px;">
+	<div>
 		{% capture c %}{% include image.html src="content\GHPC\SDF\map.gif" inline=1 style="width=100%; aspect-ratio:1" %}{% endcapture %}
 		{% capture f %}Multiple SDFs allow multiple colors & are combined with shaded relief.{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
@@ -211,13 +187,13 @@ A very nice optimization of ArmA's material system is the combining of materials
 ## N-Body Gravity Physics
 A [N-Body simulation](https://en.wikipedia.org/wiki/N-body_simulation "wikipedia") simulates all objects as sources of gravity. *For example, all the stars in the Milky Way galaxy pull on the Sun, & the Sun pulls on all the stars.* This is particularly expensive because the calculations increase exponentially with the body count ([O(n^2)](https://www.bigocheatsheet.com/ "Big-O Cheat Sheet")).
 
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="width:max-content; margin:auto; margin-top:0px;">
+<div class="media_grid">
+	<div style="width:max-content">
 		{% capture c %}{% include image.html src="content/Gravity/BH.gif" inline=1 %}{% endcapture %}
 		{% capture f %}<a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation" title="wikipedia">Barnes-Hut</a> algorithm reduces # of calculations by simulating clumps of bodies as one (<a href="https://www.bigocheatsheet.com/" title="Big-O Cheat Sheet">O(n*log(n))</a>).{% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:475px" %}
 	</div>
-	<div style="margin:auto; margin-top:0px;">
+	<div>
 		{% capture c %}{% include image.html src="content/Gravity/nbody.gif" inline=1 %}{% endcapture %}
 		{% capture f %}Multi-threaded, <span class="tooltip" tip="Keeping memory access grouped together. Extremely important for high performance code.">cache-coherent</span>, <span class="tooltip" tip="Unity's new low-level C# compiler that attempts to convert code to a more parallel form (vectorization).">Burst compiled</span>, brute-force approach. For 4096 bodies, compared to the unoptimized starting point, this resulted in a speed up from <strong>~600ms</strong> per frame to <strong>~6ms</strong> (mostly from cache-coherency). PhysX collisions are now the bottleneck. {% endcapture %}
 		{% include figure.html content=c footer=f footerStyle="max-width:390px" %}
@@ -262,13 +238,13 @@ Only unlit surface color is shown, but simultaneously <strong><a href="content/R
 {% include figure.html content=c footer=f %}
 
 To understand how the texturing was achieved, I wrote a Python script in Blender to convert shader assembly to a material node network.
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px; max-width:100%">
+<div class="media_grid">
+	<div style="max-width:100%">
 		{% capture c %}{% include assembly.html %}{% endcapture %}
 		{% capture f %}M4A1 rifle DirectX <span class="tooltip" tip="Code responsible for coloring every pixel on screen.">pixel shader</span> assembly{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:475px" %}
 	</div>
-	<div style="width:max-content; margin:auto; margin-top:0px;">
+	<div style="width:max-content">
 		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\dxbc_normal.jpg" inline=1 %}{% endcapture %}
 		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to aproximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
@@ -279,13 +255,13 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 {% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_dxbc_nodes.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_dxbc_nodes.png" %}
 
 <center>The result is a near pixel perfect recreation of how the rifle appears ingame.</center>
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px;">
+<div class="media_grid">
+	<div>
 		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_desert.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_desert.png" inline=1 %}{% endcapture %}
 		{% capture f %}Desert camoflague variant, with every bumb & scratch exactly as ingame{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
-	<div style="width:max-content; margin:auto; margin-top:0px;">
+	<div style="width:max-content">
 		{% capture c %}{% include image.html src="content\Reverse Engineer\BF3\bf3_m4a1_black.jpg" href="content\Reverse Engineer\BF3\bf3_m4a1_black.png" inline=1 %}{% endcapture %}
 		{% capture f %}Ordinary black variant uncovered by bypassing the desert camo part of the node network{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
@@ -302,21 +278,21 @@ Ultimately the goal was to fully automate this process to work for all art on sc
 {% include figure.html content=c footer=f %}
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
+	<div class="picture_grid" style="grid-template-columns: auto auto auto">
 		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_satellite.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_heightmap.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 		{% include image.html src="content\Reverse Engineer\ArmA\Stratis_mask.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white; max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
+	<figcaption style="max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
 </center>
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
+	<div class="picture_grid" style="grid-template-columns: auto auto auto">
 		{% include image.html src="content\Reverse Engineer\ArmA\stratis_mesh.jpg" href="content\Reverse Engineer\ArmA\stratis_mesh.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 		{% include image.html src="content\Reverse Engineer\ArmA\stratis_objects.jpg" href="content\Reverse Engineer\ArmA\stratis_objects.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 		{% include image.html src="content\Reverse Engineer\ArmA\stratis_bounding_boxes.jpg" href="content\Reverse Engineer\ArmA\stratis_bounding_boxes.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white;"><em>Terrain heightmap as a mesh, followed by bounding boxes of all the objects on the map (to debug before replacing with models).</em></figcaption>
+	<figcaption><em>Terrain heightmap as a mesh, followed by bounding boxes of all the objects on the map (to debug before replacing with models).</em></figcaption>
 </center>
 
 # 3D Art
@@ -343,3 +319,5 @@ Fully procedurally modeled & textured using World Machine's erosion simulation.
 		{% include figure.html content=c footer=f style="max-width:480px" %}
 	</div>
 </div>
+
+<!-- <iframe src="/pages/SPIKE.html" style="width:100%" seamless> -->
