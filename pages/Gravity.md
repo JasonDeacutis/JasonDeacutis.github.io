@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 ## N-Body Gravity Physics

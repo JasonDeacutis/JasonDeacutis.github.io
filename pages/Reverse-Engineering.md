@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 ## Reverse Engineering - <span class="tooltip" tip="AAA 2011 first-person-shooter game, revolutionary for its graphics at the time">Battlefield 3</span>
