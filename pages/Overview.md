@@ -18,7 +18,7 @@
         top: 35%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 100%;
         font-size: 4.5cqmin;
         font-weight: bold;
         text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
@@ -52,28 +52,28 @@
 
 <!-- Test
 <div class="categories" style="grid-template-columns: auto auto auto auto">
-    <img src="/content\GHPC\T-55s.jpg">
-    <img src="/content\GHPC\Night Fire.jpg">
-    <img src="/content\GHPC\T-72s.jpg">
-    <img src="/content\GHPC\Abrams.jpg">
+    <img src="/content/GHPC/T-55s.jpg">
+    <img src="/content/GHPC/Night Fire.jpg">
+    <img src="/content/GHPC/T-72s.jpg">
+    <img src="/content/GHPC/Abrams.jpg">
 </div>
 <p> -->
 
 <div class="categories">
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content\GHPC\T-55s.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-55s.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content\GHPC\Night Fire.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/Night Fire.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content\GHPC\T-72s.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-72s.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content\GHPC\Abrams.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/Abrams.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
@@ -93,13 +93,13 @@
         <div>Gravity</div>
     </div>
     <!-- <div>
-        <a href="index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal.gif"></a>
+        <a href="index" title="Photogrammetry"><img src="/content/Scans/MLRS_normal.gif"></a>
         <div>Photogrammetry</div>
     </div> -->
     <!-- <div>
         <a href="index" title="Photogrammetry">
-            <img src="/content\Scans\MLRS_normal_static.jpg" class="static">
-            <img src="/content\Scans\MLRS_normal.gif">
+            <img src="/content/Scans/MLRS_normal_static.jpg" class="static">
+            <img src="/content/Scans/MLRS_normal.gif">
         </a>
         <div>Photogrammetry</div>
     </div> -->
@@ -112,11 +112,11 @@
         <div>CUP</div>
     </div>
     <div>
-        <a href="/index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal_static.jpg"></a>
+        <a href="Photogrammetry" title="Photogrammetry"><img src="/content/Scans/MLRS_normal_static.jpg"></a>
         <div>Photogrammetry</div>
     </div>
     <div>
-        <a href="/index" title="3D Art"><img src="/content\Art\an-prc-117g.png"></a>
+        <a href="Art" title="3D Art"><img src="/content/Art/an-prc-117g.png"></a>
         <div>3D Art</div>
     </div>
 </div>

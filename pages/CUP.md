@@ -18,11 +18,11 @@ I worked as a small part of a massive team of passionate community members.
 	{% include image.html src="/content/CUP/small/chernarus winter.png" href="/content/CUP/chernarus winter.png" inline=1 %}
 	{% include image.html src="/content/CUP/small/czech.png" href="/content/CUP/czech.png" inline=1 %}
 </div>
-{% include compare.html a="/content\CUP\A2.jpg" b="/content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" style="width=100%; aspect-ratio:16/9" %}
+{% include compare.html a="/content/CUP/A2.jpg" b="/content/CUP/A3.jpg" labelA="ArmA 2" labelB="CUP" style="width=100%; aspect-ratio:16/9" %}
 ## Blender Material Importer
 Blender addon that allows the importing of ArmA's .rvmat materials and textures.<br>
 Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for [Blender](https://www.blender.org/features/).
 <img src="/content/CUP/barracks.jpg">
 <img src="/content/CUP/rvmat.png">
 A very nice optimization of ArmA's material system is the combining of materials into a single "[Multi Material](https://community.bistudio.com/wiki/Multimaterial "bikipedia")". This can drastically reduce the amount of CPU <span class="tooltip" tip="Command sent to the graphics card to draw a set of triangles.">drawcalls</span>, especially when there are hundreds of models on screen.
-{% include compare.html a="/content\CUP\ATC-multi.jpg" b="/content\CUP\ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" style="width=100%; aspect-ratio:980/495" %}
+{% include compare.html a="/content/CUP/ATC-multi.jpg" b="/content/CUP/ATC-mask.jpg" labelA="Combined" labelB="Mask" pos="0.42" style="width=100%; aspect-ratio:980/495" %}

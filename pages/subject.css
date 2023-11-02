@@ -9,6 +9,9 @@
     margin-top: 0;
     width: 485px;
 }
+.media_grid img {
+    object-fit: cover;
+}
 .youtube {
     aspect-ratio: 16/9;
     width: 100%;
@@ -21,4 +24,10 @@ figure figcaption {
     text-align: center;
     vertical-align: top;
     text-wrap: balance;
+}
+a > img {
+    transition: .25s ease;
+}
+a > img:hover {
+    filter: brightness(75%);
 }
