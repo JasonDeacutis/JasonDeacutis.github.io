@@ -13,7 +13,8 @@
 ## [Terrains](https://www.cup-arma3.org/terrains "www.cup-arma3.org/terrains")
 {% include image.html src="/content/CUP/chernarus_small.jpg" href="/content/CUP/chernarus.png" style="width=100%; aspect-ratio:16/9" %}
 {% include compare.html a="/content\CUP\A2.jpg" b="/content\CUP\A3.jpg" labelA="ArmA 2" labelB="CUP" style="width=100%; aspect-ratio:16/9" %}
-## Blender Material Tool
+## Blender Material Importer
+Blender addon that allows the importing of ArmA's .rvmat materials and textures.<br>
 Hopefully soon to be integrated into Alwarren's [ArmA Toolbox](https://www.armaholic.com/page.php?id=20519 "armaholic.com") addon for [Blender](https://www.blender.org/features/).
 {% include image.html src="/content/CUP/barracks.jpg" w=980 h=466 %}
 {% include image.html src="/content/CUP/rvmat.jpg" href="/content/CUP/rvmat.png" w=980 h=430 %}

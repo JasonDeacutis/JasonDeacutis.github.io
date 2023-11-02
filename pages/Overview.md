@@ -15,13 +15,17 @@
     }
     .categories > div > div {
         position: absolute;
-        top: 50%; 
+        top: 35%; 
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 90%;
         font-size: 4.5cqmin;
         font-weight: bold;
         text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
         pointer-events: none;
+    }
+    .categories img {
+        aspect-ratio: 16/9;
     }
     img {
         transition: .25s ease;
@@ -57,20 +61,36 @@
 
 <div class="categories">
     <div>
-        <a href="index" title="GHPC"><img src="/content\GHPC\T-55s.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content\GHPC\T-55s.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="index" title="GHPC"><img src="/content\GHPC\Night Fire.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content\GHPC\Night Fire.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="index" title="GHPC"><img src="/content\GHPC\T-72s.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content\GHPC\T-72s.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="index" title="GHPC"><img src="/content\GHPC\Abrams.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content\GHPC\Abrams.jpg"></a>
         <div>GHPC</div>
+    </div>
+    <div>
+        <a href="SPIKE" title="SPIKE NLOS"><img src="/content/SPIKE/Full Flight/5. terminal.gif"></a>
+        <div>SPIKE</div>
+    </div>
+    <div>
+        <a href="M240" title="MR M240"><img src="/content/MR M240/mr m240.gif"></a>
+        <div>MR M240</div>
+    </div>
+    <div>
+        <a href="Atmosphere" title="Atmosphere"><img src="/content/Shader/Atmosphere/sunset2.jpg"></a>
+        <div>Atmosphere</div>
+    </div>
+    <div>
+        <a href="Gravity" title="Gravity"><img src="/content/Gravity/BH.gif"></a>
+        <div>Gravity</div>
     </div>
     <!-- <div>
         <a href="index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal.gif"></a>
@@ -83,6 +103,14 @@
         </a>
         <div>Photogrammetry</div>
     </div> -->
+    <div>
+        <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg"></a>
+        <div>Reverse Engineering</div>
+    </div>
+    <div>
+        <a href="CUP" title="ArmA 3 - Community Upgrade Project"><img src="/content/CUP/CUP_thumb.jpg"></a>
+        <div>CUP</div>
+    </div>
     <div>
         <a href="index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal_static.jpg"></a>
         <div>Photogrammetry</div>

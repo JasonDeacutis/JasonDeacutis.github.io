@@ -11,15 +11,6 @@
 	<script>hljs.initHighlightingOnLoad();</script>
 	<link rel="stylesheet" href="/index.css">
 	<style>
-		.media_grid {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		.media_grid > * {
-			margin: auto;
-			margin-top: 0;
-		}
 		iframe[seamless]{
 			background-color: transparent;
 			border: 0px none transparent;

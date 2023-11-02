@@ -10,6 +10,15 @@ figure figcaption {
     vertical-align: top;
     text-wrap: balance;
 }
+.media_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.media_grid > * {
+    margin: auto;
+    margin-top: 0;
+}
 .tooltip {
     display: inline;
     position: relative;
