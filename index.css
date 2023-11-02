@@ -50,9 +50,9 @@ figure figcaption {
     border-width: 6px 6px 0px;
     content: "";
 }
-img {
+a > img {
     transition: .25s ease;
 }
-img:hover {
+a > img:hover {
     filter: brightness(75%);
 }

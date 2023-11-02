@@ -77,11 +77,11 @@
         <div>GHPC</div>
     </div>
     <div>
-        <a href="SPIKE" title="SPIKE NLOS"><img src="/content/SPIKE/Full Flight/5. terminal.gif"></a>
+        <a href="SPIKE" title="SPIKE NLOS"><img src="/content/SPIKE/spike.gif"></a>
         <div>SPIKE</div>
     </div>
     <div>
-        <a href="M240" title="MR M240"><img src="/content/MR M240/mr m240.gif"></a>
+        <a href="M240" title="MR M240"><img src="/content/MR M240/mr m240 small.gif"></a>
         <div>MR M240</div>
     </div>
     <div>
@@ -104,7 +104,7 @@
         <div>Photogrammetry</div>
     </div> -->
     <div>
-        <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg"></a>
+        <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg" style="transform: scale(1.75) translate(-5%,10%)"></a>
         <div>Reverse Engineering</div>
     </div>
     <div>
@@ -112,11 +112,11 @@
         <div>CUP</div>
     </div>
     <div>
-        <a href="index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal_static.jpg"></a>
+        <a href="/index" title="Photogrammetry"><img src="/content\Scans\MLRS_normal_static.jpg"></a>
         <div>Photogrammetry</div>
     </div>
     <div>
-        <a href="index" title="3D Art"><img src="/content\Art\an-prc-117g.png"></a>
+        <a href="/index" title="3D Art"><img src="/content\Art\an-prc-117g.png"></a>
         <div>3D Art</div>
     </div>
 </div>
