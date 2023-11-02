@@ -50,26 +50,9 @@
 
 # Overview
 
-<!-- Test
-<div class="categories" style="grid-template-columns: auto auto auto auto">
-    <img src="/content/GHPC/T-55s.jpg">
-    <img src="/content/GHPC/Night Fire.jpg">
-    <img src="/content/GHPC/T-72s.jpg">
-    <img src="/content/GHPC/Abrams.jpg">
-</div>
-<p> -->
-
 <div class="categories">
     <div>
         <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-55s.jpg"></a>
-        <div>GHPC</div>
-    </div>
-    <div>
-        <a href="GHPC" title="GHPC"><img src="/content/GHPC/Night Fire.jpg"></a>
-        <div>GHPC</div>
-    </div>
-    <div>
-        <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-72s.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
@@ -92,17 +75,14 @@
         <a href="Gravity" title="Gravity"><img src="/content/Gravity/BH.gif"></a>
         <div>Gravity</div>
     </div>
-    <!-- <div>
-        <a href="index" title="Photogrammetry"><img src="/content/Scans/MLRS_normal.gif"></a>
-        <div>Photogrammetry</div>
-    </div> -->
-    <!-- <div>
-        <a href="index" title="Photogrammetry">
-            <img src="/content/Scans/MLRS_normal_static.jpg" class="static">
-            <img src="/content/Scans/MLRS_normal.gif">
-        </a>
-        <div>Photogrammetry</div>
-    </div> -->
+    <div>
+        <a href="Raytracing" title="Realtime Raytracer & Pathtracer"><img src="/content/Shader/Raytracer/rt thumb.jpg"></a>
+        <div>Raytracing</div>
+    </div>
+    <div>
+        <a href="Raymarching" title="Raymarcher"><img src="/content/Shader/Raymarcher/raymarching thumb.jpg"></a>
+        <div>Raymarching</div>
+    </div>
     <div>
         <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg" style="transform: scale(1.75) translate(-5%,10%)"></a>
         <div>Reverse Engineering</div>
@@ -112,7 +92,7 @@
         <div>CUP</div>
     </div>
     <div>
-        <a href="Photogrammetry" title="Photogrammetry"><img src="/content/Scans/MLRS_normal_static.jpg"></a>
+        <a href="Photogrammetry" title="Photogrammetry"><img src="/content/Scans/MLRS_normal_static.jpg" style="object-position: 70% 50%"></a>
         <div>Photogrammetry</div>
     </div>
     <div>

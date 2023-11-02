@@ -31,13 +31,13 @@ Only unlit surface color is shown, but simultaneously <strong><a href="/content/
 {% include figure.html content=c footer=f %}
 
 To understand how the texturing was achieved, I wrote a Python script in Blender to convert shader assembly to a material node network.
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px; max-width:100%">
+<div class="media_grid">
+	<div style="max-width:100%">
 		{% capture c %}{% include assembly.html %}{% endcapture %}
 		{% capture f %}M4A1 rifle DirectX <span class="tooltip" tip="Code responsible for coloring every pixel on screen.">pixel shader</span> assembly{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:475px" %}
 	</div>
-	<div style="width:max-content; margin:auto; margin-top:0px;">
+	<div style="width:max-content">
 		{% capture c %}{% include image.html src="/content/Reverse Engineer/BF3/dxbc_normal.jpg" inline=1 %}{% endcapture %}
 		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to aproximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
@@ -48,13 +48,13 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 {% include image.html src="/content/Reverse Engineer/BF3/bf3_m4a1_dxbc_nodes.jpg" href="/content/Reverse Engineer/BF3/bf3_m4a1_dxbc_nodes.png" %}
 
 <center>The result is a near pixel perfect recreation of how the rifle appears ingame.</center>
-<div style="display:flex; flex-wrap:wrap; justify-content:space-between">
-	<div style="margin:auto; margin-top:0px;">
+<div class="media_grid">
+	<div>
 		{% capture c %}{% include image.html src="/content/Reverse Engineer/BF3/bf3_m4a1_desert.jpg" href="/content/Reverse Engineer/BF3/bf3_m4a1_desert.png" inline=1 %}{% endcapture %}
 		{% capture f %}Desert camoflague variant, with every bumb & scratch exactly as ingame{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
-	<div style="width:max-content; margin:auto; margin-top:0px;">
+	<div style="width:max-content">
 		{% capture c %}{% include image.html src="/content/Reverse Engineer/BF3/bf3_m4a1_black.jpg" href="/content/Reverse Engineer/BF3/bf3_m4a1_black.png" inline=1 %}{% endcapture %}
 		{% capture f %}Ordinary black variant uncovered by bypassing the desert camo part of the node network{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
@@ -71,19 +71,19 @@ Ultimately the goal was to fully automate this process to work for all art on sc
 {% include figure.html content=c footer=f %}
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
+	<div class="picture_grid" style="grid-template-columns: auto auto auto">
 		{% include image.html src="/content/Reverse Engineer/ArmA/Stratis_satellite.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 		{% include image.html src="/content/Reverse Engineer/ArmA/Stratis_heightmap.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 		{% include image.html src="/content/Reverse Engineer/ArmA/Stratis_mask.jpg" inline=1 a_style="width:100%; aspect-ratio:1;" %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white; max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
+	<figcaption style="max-width:650px"><em>ArmA 3's <a href="https://armedassault.fandom.com/wiki/Stratis#Stratis_Air_Base">Stratis</a> satellite, heightmap, & surface type textures extracted & stitched together (8192x8192, reduced here for legal reasons).</em></figcaption>
 </center>
 
 <center style="margin: 1em 0 1em 0">
-	<div style="display:grid; grid-template-columns: auto auto auto; grid-gap: 1px; background-color:black">
+	<div class="picture_grid" style="grid-template-columns: auto auto auto">
 		{% include image.html src="/content/Reverse Engineer/ArmA/stratis_mesh.jpg" href="/content/Reverse Engineer/ArmA/stratis_mesh.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 		{% include image.html src="/content/Reverse Engineer/ArmA/stratis_objects.jpg" href="/content/Reverse Engineer/ArmA/stratis_objects.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 		{% include image.html src="/content/Reverse Engineer/ArmA/stratis_bounding_boxes.jpg" href="/content/Reverse Engineer/ArmA/stratis_bounding_boxes.png" inline=1 a_style="width:100%; aspect-ratio:490/276;" %}
 	</div>
-	<figcaption style="font-size:initial; background-color:white;"><em>Terrain heightmap as a mesh, followed by bounding boxes of all the objects on the map (to debug before replacing with models).</em></figcaption>
+	<figcaption><em>Terrain heightmap as a mesh, followed by bounding boxes of all the objects on the map (to debug before replacing with models).</em></figcaption>
 </center>
