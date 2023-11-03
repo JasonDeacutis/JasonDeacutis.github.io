@@ -72,8 +72,8 @@
         <div>Atmosphere</div>
     </div>
     <div>
-        <a href="Gravity" title="Gravity"><img src="/content/Gravity/BH.gif"></a>
-        <div>Gravity</div>
+        <a href="Physics" title="Physics"><img src="/content/Physics/BH.gif"></a>
+        <div>Physics</div>
     </div>
     <div>
         <a href="Raytracing" title="Realtime Raytracer & Pathtracer"><img src="/content/Shader/Raytracer/rt thumb.jpg"></a>
@@ -82,6 +82,14 @@
     <div>
         <a href="Raymarching" title="Raymarcher"><img src="/content/Shader/Raymarcher/raymarching thumb.jpg"></a>
         <div>Raymarching</div>
+    </div>
+    <div>
+        <a href="Icoplanet" title="Icoplanet"><img src="/content/Icoplanet/beachball.gif"></a>
+        <div>Icoplanet</div>
+    </div>
+    <div>
+        <a href="Blender Addons" title="Blender Addons"><img src="/content/Icoplanet/beachball.gif"></a>
+        <div>Blender Addons</div>
     </div>
     <div>
         <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg" style="transform: scale(1.75) translate(-5%,10%)"></a>

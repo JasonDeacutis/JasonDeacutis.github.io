@@ -10,12 +10,6 @@
     img {
         border-radius: 8px;
     }
-    a > img {
-		transition: .25s ease;
-	}
-	a > img:hover {
-		filter: brightness(75%);
-	}
 	</style>
 </head>
 
