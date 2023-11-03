@@ -88,7 +88,7 @@
         <div>Icoplanet</div>
     </div>
     <div>
-        <a href="Blender Addons" title="Blender Addons"><img src="/content/Icoplanet/beachball.gif"></a>
+        <a href="Blender-Addons" title="Blender Addons"><img src="/content/Blender/addons_thumb.jpg"></a>
         <div>Blender Addons</div>
     </div>
     <div>
