@@ -9,14 +9,15 @@ I'm more of a programmer than an artist, but I dabble when I can.
 Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
 {% include image.html src="/content/Art/an-prc-117g_small.jpg" href="/content/Art/an-prc-117g.png" style="width:100%; aspect-ratio: 16/9;" %}
 
+### Hardsurface Modeling
 <div class="media_grid">
     <figure>
         <a href="/content/Art/M2 .50 Cal/m2_big_pew.png"><img src="/content/Art/M2 .50 Cal/m2_big_pew.png" style="filter: brightness(1.5)"></a>
-        <figcaption>M2 .50 Cal</figcaption>
+        <figcaption>M2. 50 Cal</figcaption>
     </figure>
     <figure>
         <a href="/content/Art/M2 .50 Cal/m2_white.png"><img src="/content/Art/M2 .50 Cal/m2_white.png"></a>
-		<figcaption>Rendered in Blender</figcaption>
+        <figcaption>Rendered in Blender</figcaption>
     </figure>
     <figure>
         <a href="/content/Art/M2 .50 Cal/plasticity.png"><img src="/content/Art/M2 .50 Cal/plasticity.png"></a>
@@ -56,7 +57,12 @@ Fully procedurally modeled & textured using [Blender](https://www.blender.org/fe
 	</div>
 	<div style="width:max-content; margin:auto; margin-top:0px">
 		{% capture c %}{% include image.html src="/content/Art/orbit.gif" inline=1 %}{% endcapture %}
-		{% capture f %}Retro Vector Orbit{% endcapture %}
+		{% capture f %}Vector Orbit{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:480px" %}
+	</div>
+	<div style="width:max-content; margin:auto; margin-top:0px">
+		{% capture c %}{% include image.html src="/content/Art/vector_earth.gif" inline=1 %}{% endcapture %}
+		{% capture f %}Vector Earth{% endcapture %}
+		{% include figure.html content=c footer=f %}
 	</div>
 </div>

@@ -12,10 +12,10 @@
 *Early Access "Cold War Gone Hot" tank simulation game.<br>Short for "Gunner, use High Explosive Anti Tank round on enemy Personnel Carrier!" (yes, its nerdy)*
 
 <div class="picture_grid">
-	{% include image.html src="/content/GHPC/T-55s.jpg" inline=1 %}
+	{% include image.html src="/content/GHPC/T-55s_small.jpg" href="/content/GHPC/T-55s.jpg" inline=1 %}
 	{% include image.html src="/content/GHPC/Night Fire.jpg" inline=1 %}
 	{% include image.html src="/content/GHPC/T-72s.jpg" inline=1 %}
-	{% include image.html src="/content/GHPC/Abrams.jpg" inline=1 %}
+	{% include image.html src="/content/GHPC/Abrams_small.jpg" href="/content/GHPC/Abrams.jpg" inline=1 %}
 </div>
 
 ## Reticles

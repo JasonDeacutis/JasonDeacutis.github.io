@@ -16,7 +16,15 @@ I believe there to be many CPU optimizations that could still be performed.
 <div class="media_grid" style="gap:10px">
     <figure>
         <img src="/content/Icoplanet/beachball.gif">
-        <figcaption>Adaptive subdivision and culling of the D20 based on screenspace triangle size.</figcaption>
+        <figcaption>Adaptive subdivision and culling based on screenspace triangle size.</figcaption>
+    </figure>
+    <figure>
+        <img src="/content/Icoplanet/tree_step.gif">
+        <figcaption>During each iteration, the leaves of the tree are evluated to determine if they should be subdivided.</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Icoplanet/frustum_cull_far.png"><img src="/content/Icoplanet/frustum_cull_far.jpg"></a>
+        <figcaption>Frustum & backface culling are also performed.</figcaption>
     </figure>
     <figure>
         <img src="/content/Icoplanet/terrain.gif">

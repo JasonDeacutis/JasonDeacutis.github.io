@@ -52,11 +52,11 @@
 
 <div class="categories">
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-55s.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/T-55s_small.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
-        <a href="GHPC" title="GHPC"><img src="/content/GHPC/Abrams.jpg"></a>
+        <a href="GHPC" title="GHPC"><img src="/content/GHPC/Abrams_small.jpg"></a>
         <div>GHPC</div>
     </div>
     <div>
@@ -64,7 +64,7 @@
         <div>SPIKE</div>
     </div>
     <div>
-        <a href="M240" title="MR M240"><img src="/content/MR M240/mr m240 small.gif"></a>
+        <a href="M240" title="MR M240"><img src="/content/MR M240/mr_m240_small.gif"></a>
         <div>MR M240</div>
     </div>
     <div>
@@ -72,7 +72,7 @@
         <div>Atmosphere</div>
     </div>
     <div>
-        <a href="Physics" title="Physics"><img src="/content/Physics/BH.gif"></a>
+        <a href="Physics" title="Physics"><img src="/content/Physics/thumb.gif"></a>
         <div>Physics</div>
     </div>
     <div>
@@ -80,7 +80,7 @@
         <div>Raytracing</div>
     </div>
     <div>
-        <a href="Raymarching" title="Raymarcher"><img src="/content/Shader/Raymarcher/raymarching thumb.jpg"></a>
+        <a href="Raymarching" title="Raymarcher"><img src="/content/Shader/Raymarcher/raymarch_thumb.jpg"></a>
         <div>Raymarching</div>
     </div>
     <div>
@@ -88,8 +88,24 @@
         <div>Icoplanet</div>
     </div>
     <div>
-        <a href="Blender-Addons" title="Blender Addons"><img src="/content/Blender/addons_thumb.jpg"></a>
-        <div>Blender Addons</div>
+        <a href="Blender-Addons#ue4-uasset-importer" title="UE4 Importer"><img src="/content/Blender/addons_thumb.jpg"></a>
+        <div>UE4 Importer</div>
+    </div>
+    <div>
+        <a href="Blender-Addons#x-plane-obj-importer" title="X-Plane Importer"><img src="/content/Blender/X-Plane/thumb.jpg" style=""></a>
+        <div>X-Plane Importer</div>
+    </div>
+    <div>
+        <a href="Blender-Addons#dcs-edm-importer" title="DCS EDM Importer"><img src="/content/Blender/EDM/thumb2.jpg"></a>
+        <div>DCS Importer</div>
+    </div>
+    <div>
+        <a href="Blender-Addons#valve-bsp-importer" title="Valve BSP Importer"><img src="/content/Blender/BSP/thumb.jpg"></a>
+        <div>Source Importer</div>
+    </div>
+    <div>
+        <a href="Blender-Addons#mjolnir---halo-reach-map-editor" title="Blender Addons"><img src="/content/Blender/Mjolnir/thumb.jpg"></a>
+        <div>Mjolnir</div>
     </div>
     <div>
         <a href="Reverse-Engineering" title="Reverse Engineering Projects"><img src="/content/Reverse Engineer/BF3/bf3_alley_blender_dof.jpg" style="transform: scale(1.75) translate(-5%,10%)"></a>
@@ -104,7 +120,7 @@
         <div>Photogrammetry</div>
     </div>
     <div>
-        <a href="Art" title="3D Art"><img src="/content/Art/an-prc-117g.png"></a>
+        <a href="Art" title="3D Art"><img src="/content/Art/thumb.jpg"></a>
         <div>3D Art</div>
     </div>
 </div>
