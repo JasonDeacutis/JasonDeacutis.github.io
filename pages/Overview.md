@@ -84,7 +84,7 @@
         <div>Raymarching</div>
     </div>
     <div>
-        <a href="Icoplanet" title="Icoplanet"><img src="/content/Icoplanet/beachball.gif"></a>
+        <a href="Icoplanet" title="Icoplanet"><img src="/content/Icoplanet/beachball_small.gif"></a>
         <div>Icoplanet</div>
     </div>
     <div>
