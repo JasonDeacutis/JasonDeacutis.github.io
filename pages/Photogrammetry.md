@@ -14,6 +14,13 @@ Photogrammetry is the process of reconstructing 3d meshes from photographs. I us
         <a href="/content/Scans/helis.gif" title="Enlarge"><img src="/content/Scans/helis_small.gif"></a>
         <figcaption>OH-6 Cayuse & UH-1 Huey (needed higher photos)</figcaption>
     </figure>
+    <figure>
+        <a href="/content/Scans/mini_2_top.png" title="Enlarge"><img src="/content/Scans/mini_2_top.jpg"></a>
+        <figcaption>DJI Mini 2</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Scans/mini_2_bottom.png" title="Enlarge"><img src="/content/Scans/mini_2_bottom.jpg"></a>
+    </figure>
     <div class="sketchfab-embed-wrapper">
         <iframe
             style="width:100%; aspect-ratio:16/9"
