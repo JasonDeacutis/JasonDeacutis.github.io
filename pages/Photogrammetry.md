@@ -7,11 +7,11 @@ Photogrammetry is the process of reconstructing 3d meshes from photographs. I us
 
 <div class="media_grid">
     <figure>
-        <a href="/content/Scans/MLRS_normal.gif" title="Enlarge"><img src="/content/Scans/MLRS_normal.gif"></a>
+        <a href="/content/Scans/MLRS_normal.gif" title="Enlarge"><img src="/content/Scans/MLRS_normal_small.gif"></a>
         <figcaption>MLRS</figcaption>
     </figure>
     <figure>
-        <a href="/content/Scans/helis.gif" title="Enlarge"><img src="/content/Scans/helis.gif"></a>
+        <a href="/content/Scans/helis.gif" title="Enlarge"><img src="/content/Scans/helis_small.gif"></a>
         <figcaption>OH-6 Cayuse & UH-1 Huey (needed higher photos)</figcaption>
     </figure>
     <div class="sketchfab-embed-wrapper">
@@ -32,7 +32,7 @@ Photogrammetry is the process of reconstructing 3d meshes from photographs. I us
     </div>
     <div class="media_grid">
         <figure>
-            <img src="/content/Scans/AH-1F cockpit.gif" style="aspect-ratio:16/9">
+            <a href="/content/Scans/AH-1F_cockpit.gif"><img src="/content/Scans/AH-1F_cockpit_small.gif" style="aspect-ratio:16/9"></a>
             <figcaption>AH-1F Cockpit (didn't get to take a lot of photos)</figcaption>
         </figure>
     </div>
@@ -57,7 +57,7 @@ Photogrammetry is the process of reconstructing 3d meshes from photographs. I us
         </div>
     </figure>
     <figure>
-        <a href="/content/Scans/hl2.gif" title="Enlarge"><img src="/content/Scans/hl2.gif"></a>
+        <a href="/content/Scans/hl2.gif" title="Enlarge"><img src="/content/Scans/hl2_small.gif"></a>
         <figcaption>Half Life 2 as a proof of concept</figcaption>
     </figure>
     <div class="sketchfab-embed-wrapper">
