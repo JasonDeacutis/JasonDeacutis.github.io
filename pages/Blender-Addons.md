@@ -85,6 +85,7 @@ Animations are in progress, but X-Plane's animation system is very matrix based 
 
 ## DCS EDM Importer
 Work-In-Progress importer for Eagle Dynamics' [Digital Combat Simulator](https://store.steampowered.com/app/223750/DCS_World_Steam_Edition/) EDM model file format.
+Rigid meshes and materials are functional, I'm still working on fully supporting skinned meshes.
 
 <figure style="margin-left:0px; margin-right:0px">
 	<a href="/content/Blender/EDM/aim9.png"><img src="/content/Blender/EDM/aim9.png"></a>
