@@ -43,6 +43,14 @@ Fully procedurally modeled & textured using [Blender](https://www.blender.org/fe
         <a href="/content/Art/WM.jpg"><img src="/content/Art/WM_small.jpg"></a>
         <figcaption><a href="https://www.world-machine.com/">World Machine</a> Terrain</figcaption>
     </figure>
+    <figure>
+        <a href="/content/Art/T-72_F.png"><img src="/content/Art/T-72_F.jpg"></a>
+        <figcaption>T-72</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/T-72_ERA_F.png"><img src="/content/Art/T-72_ERA_F.jpg"></a>
+        <figcaption>ERA Variant</figcaption>
+    </figure>
 </div>
 
 ### Planetary
