@@ -2,6 +2,39 @@
     <link rel="stylesheet" href="subject.css">
 </head>
 
+# Guassian Splatting
+Giving the [latest trend in computer graphics](https://youtu.be/HVv_IQKlafQ?si=xQDyn9URuIj2uI9l) a try.
+
+<center>
+    <figure>
+        <a href="/content/Scans/3DGS/ah-1f.gif" title="Enlarge"><img src="/content/Scans/3DGS/ah-1f.gif"></a>
+        <figcaption>AH-1F Guassian Splat (200 Images in Polycam)</figcaption>
+    </figure>
+</center>
+<div class="media_grid">
+    <figure>
+        <a href="/content/Scans/3DGS/ah-1f_1.png" title="Enlarge"><img src="/content/Scans/3DGS/ah-1f_1.jpg"></a>
+    </figure>
+    <figure>
+        <a href="/content/Scans/3DGS/ah-1f_2.png" title="Enlarge"><img src="/content/Scans/3DGS/ah-1f_2.jpg"></a>
+    </figure>
+</div>
+
+<center>
+    <figure>
+        <a href="/content/Scans/3DGS/oh-6a.gif" title="Enlarge"><img src="/content/Scans/3DGS/oh-6a.gif"></a>
+        <figcaption>OH-6A Guassian Splat (200 Images in Polycam)</figcaption>
+    </figure>
+</center>
+<div class="media_grid">
+    <figure>
+        <a href="/content/Scans/3DGS/oh-6a_1.png" title="Enlarge"><img src="/content/Scans/3DGS/oh-6a_1.jpg"></a>
+    </figure>
+    <figure>
+        <a href="/content/Scans/3DGS/oh-6a_2.png" title="Enlarge"><img src="/content/Scans/3DGS/oh-6a_2.jpg"></a>
+    </figure>
+</div>
+
 # Photogrammetry
 Photogrammetry is the process of reconstructing 3d meshes from photographs. I use Reality Capture with a Canon EOS M50 camera and or DJI Mini 2.
 
