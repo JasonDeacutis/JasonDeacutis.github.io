@@ -1,4 +1,5 @@
 <head>
+    <title>Raytracing</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 

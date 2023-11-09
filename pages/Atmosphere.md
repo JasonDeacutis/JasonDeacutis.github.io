@@ -1,4 +1,5 @@
 <head>
+    <title>Atmosphere Shader</title>
     <link rel="stylesheet" href="subject.css">
 	<style>
     .media_grid {

@@ -1,4 +1,5 @@
 <head>
+	<title>Blender Addons</title>
     <link rel="stylesheet" href="subject.css">
     <style>
     img {

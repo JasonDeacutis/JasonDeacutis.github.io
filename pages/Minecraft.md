@@ -1,4 +1,5 @@
 <head>
+    <title>Minecraft Clone</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 

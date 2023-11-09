@@ -1,4 +1,5 @@
 <head>
+    <title>3D Art</title>
     <link rel="stylesheet" href="subject.css">
 </head>
 

@@ -1,4 +1,5 @@
 <head>
+    <title>Physics</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 

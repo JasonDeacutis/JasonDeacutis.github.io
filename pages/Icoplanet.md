@@ -1,4 +1,5 @@
 <head>
+    <title>Icoplanet</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 

@@ -1,4 +1,5 @@
 <head>
+    <title>Photogrammetry</title>
     <link rel="stylesheet" href="subject.css">
 </head>
 

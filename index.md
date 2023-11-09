@@ -1,4 +1,5 @@
 <head>
+    <title>Jason Deacutis - Portfolio</title>
 	<style>
     .categories {
         display: grid;

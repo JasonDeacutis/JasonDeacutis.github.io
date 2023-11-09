@@ -1,4 +1,5 @@
 <head>
+    <title>SPIKE NLOS Simulator</title>
     <link rel="stylesheet" href="subject.css">
 </head>
 

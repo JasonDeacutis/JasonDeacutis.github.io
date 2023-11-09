@@ -1,4 +1,5 @@
 <head>
+    <title>Raymarching</title>
     <link rel="stylesheet" href="/index.css">
 </head>
 
