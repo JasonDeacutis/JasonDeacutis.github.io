@@ -51,6 +51,8 @@
 
 # Overview
 
+Click on a project for more information:
+
 <div class="categories">
     <div>
         <a href="/pages/GHPC" title="GHPC"><img src="/content/GHPC/T-55s_small.jpg"></a>
