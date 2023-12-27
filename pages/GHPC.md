@@ -73,7 +73,7 @@ A static image needs to be very high resolution, it takes a lot of space, & even
 A mesh based map allows infinite zoom, but may be difficult to generate or require level of detail for performance.<br>
 </p>
 <p>
-<b>Signed Distance Fields</b> compromise & allow low resolution textures to encode vector graphics that can be infinetly zoomed.
+<b>Signed Distance Fields</b> compromise & allow low resolution textures to encode vector graphics that can be infinitely zoomed.
 They enable easy styling of borders & anti aliasing cheaper than traditional triangle MSAA.
 The SDFs are procedurally generated based on the forest, road, & building masks that we already use for vegetation generation & terrain materials.
 There's a lot of room for optimization, but there was no need given how fast it was already running (<1ms).
