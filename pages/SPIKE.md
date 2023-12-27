@@ -10,9 +10,9 @@ SPIKE Non-Line-Of-Sight is a ground or helicopter based long range anti-tank mis
 The video feed allows it to engage targets *much* further than previous missiles.
 The non-line-of-sight nature also allows it to engage targets while the operator remains well hidden.
 
-The goal is to train air crews on SPIKE without the hastle of live fire.
+The goal is to train air crews on SPIKE without the hassle of live fire.
 SPIKE's analog video feed is replaced with realtime rendered video from a fully simulated missile.
-Our hardware is minatureized & ruggedized enough to be placed on the aircraft (AH-64, Blackhawk, etc) &
+Our hardware is miniaturized & ruggedized enough to be placed on the aircraft (AH-64, Blackhawk, etc) &
 connected to the aircraft's data bus. The actual cockpit display & controls are used as if a live missile is being fired.
 
 <div class="media_grid">

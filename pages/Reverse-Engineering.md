@@ -40,7 +40,7 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 	</div>
 	<div style="width:max-content">
 		{% capture c %}{% include image.html src="/content/Reverse Engineer/BF3/dxbc_normal.jpg" inline=1 %}{% endcapture %}
-		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to aproximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
+		{% capture f %}Example section responsible for reading the <span class="tooltip" tip="Texture used to approximate the lighting of a bumpy surface.">normal map</span>{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:490px" %}
 	</div>
 </div>
@@ -52,7 +52,7 @@ To understand how the texturing was achieved, I wrote a Python script in Blender
 <div class="media_grid">
 	<div>
 		{% capture c %}{% include image.html src="/content/Reverse Engineer/BF3/bf3_m4a1_desert.jpg" href="/content/Reverse Engineer/BF3/bf3_m4a1_desert.png" inline=1 %}{% endcapture %}
-		{% capture f %}Desert camoflague variant, with every bumb & scratch exactly as ingame{% endcapture %}
+		{% capture f %}Desert camouflage variant, with every bump & scratch exactly as ingame{% endcapture %}
 		{% include figure.html content=c footer=f style="max-width:485px" footerStyle="max-width:80%" %}
 	</div>
 	<div style="width:max-content">
@@ -68,7 +68,7 @@ Ultimately the goal was to fully automate this process to work for all art on sc
 ***Disclaimer:** All reverse engineering I conduct is purely for educational purposes. I do not claim to be responsible for any of the original work.*
 
 {% capture c %}{% include image.html src="/content/Reverse Engineer/ArmA/utes.jpg" href="/content/Reverse Engineer/ArmA/utes_4k.jpg" inline=1 style="width:100%; aspect-ratio: 16/9;" %}{% endcapture %}
-{% capture f %}Work in progress port of ArmA 2's <a href="https://armedassault.fandom.com/wiki/Utes">Utes</a> map into Blender, by reverse engineering & extracting from the gamefiles (Enlarge for 4k).{% endcapture %}
+{% capture f %}Work in progress port of ArmA 2's <a href="https://armedassault.fandom.com/wiki/Utes">Utes</a> map into Blender, by reverse engineering & extracting from the game files (Enlarge for 4k).{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 <center style="margin: 1em 0 1em 0">

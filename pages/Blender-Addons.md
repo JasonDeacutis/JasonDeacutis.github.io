@@ -100,7 +100,7 @@ Rigid meshes and materials are functional, I'm still working on fully supporting
 	</figure>
 	<figure>
 		<a href="/content/Blender/EDM/M230.png"><img src="/content/Blender/EDM/M230.jpg"></a>
-		<figcaption>AH-64 M230 Chaingun</figcaption>
+		<figcaption>AH-64 M230 Chain Gun</figcaption>
 	</figure>
 	<figure>
 		<a href="/content/Blender/EDM/9a310m1_ao.png"><img src="/content/Blender/EDM/9a310m1_ao.jpg"></a>
@@ -119,7 +119,7 @@ For example, editing multiple objects at the same time is impossible.
 
 Mjolnir reads and writes Halo's RAM to do more advanced edits to map variants which would otherwise be very tedious or even impossible ingame.
 These edits are fully compatible with the game's save files, so maps made on PC are playable by console players.
-Perhaps the largest unforseen challenege was making the tool easy to use for first-time Blender users (many of my users).
+Perhaps the largest unforeseen challenge was making the tool easy to use for first-time Blender users (many of my users).
 
 <div class="media_grid">
 	<figure>

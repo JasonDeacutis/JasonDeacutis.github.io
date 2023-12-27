@@ -20,7 +20,7 @@
 </div>
 
 ## Reticles
-Gunsight crosshairs are integrated with the ballistics system, elements are procedurally placed to ensure projectiles always hit their mark as we tweak our amunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflex reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
+Gunsight crosshairs are integrated with the ballistics system, elements are procedurally placed to ensure projectiles always hit their mark as we tweak our ammunition over the course of development. Supports both ["old-fashoned" light-blocking reticles](https://i.ebayimg.com/images/g/Hw8AAOSwArNdQ7DZ/s-l1600.jpg "reticle plane"), & [holographic/reflex reticles](https://upload.wikimedia.org/wikipedia/commons/4/49/Mark_III_free_gun_reflector_sight_mk_9_variant_reflex_sight_animation.gif "reflector sight").
 All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">reticles</span> were meticulously recreated from their real-world counterparts, using written & photographic reference (often difficult to find).
 
 {% capture c %}{% include image.html src="/content/GHPC/Reticles/reticles_small.jpg" href="/content/GHPC/Reticles/reticles.png" inline=1 w=980 h=490 %}{% endcapture %}
@@ -53,7 +53,7 @@ All <span class="tooltip" tip="Crosshair & visual aids seen through a scope">ret
 
 ## Thermal Imaging (FLIR)
 Approximation of [Infrared](https://en.wikipedia.org/wiki/Forward-looking_infrared "Forward Looking InfraRed wikipedia") light, used to identify heat sources such as vehicles & infantry.
-Vehicle engines, gun barrels, & tracks are heat sources that can change temperature independently. In addition, the sun's position is used to determine the ambient environement temperature.
+Vehicle engines, gun barrels, & tracks are heat sources that can change temperature independently. In addition, the sun's position is used to determine the ambient environment temperature.
 Surface details are obtained using a semi-physically-based light model: surface brightness, roughness, & metalness are used to estimate [heat emittance](https://en.wikipedia.org/wiki/Emissivity "Emissivity wikipedia"), determining how bright or dark it appears in thermal imagers. This achieves decently realistic results without needing much manual labor.
 
 <center style="margin: 1em 0 1em 0">
@@ -63,7 +63,7 @@ Surface details are obtained using a semi-physically-based light model: surface 
 		{% include image.html src="/content/GHPC/FLIR/m60a3_5.jpg" href="/content/GHPC/FLIR/m60a3_5.png" inline=1 %}
 		{% include image.html src="/content/GHPC/FLIR/m60a3_4.jpg" href="/content/GHPC/FLIR/m60a3_4.png" inline=1 %}
 	</div>
-	<figcaption><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, losely based on <a href="/content/GHPC/FLIR/TTS-real.png">real sources</a> (early WIP).</em></figcaption>
+	<figcaption><em><a href="https://en.wikipedia.org/wiki/M60_tank#M60A3_series" title="wikipedia">M60A3 TTS</a>'s FLIR at night, loosely based on <a href="/content/GHPC/FLIR/TTS-real.png">real sources</a> (early WIP).</em></figcaption>
 </center>
 
 ## SDF Maps
@@ -96,7 +96,7 @@ There's a lot of room for optimization, but there was no need given how fast it 
 Realtime sky simulation, based on a simplified solar system model. Takes into account the map's global coordinates. Includes seasonal sun elevation, moon phases, & [earthshine](https://en.wikipedia.org/wiki/Planetshine#/media/File:New_Moon.jpg "real life earthshine (wikipedia)"). The moon is also simulated as a light source & its brightness is affected by phase.
 
 {% capture c %}{% include image.html src="/content/GHPC/Sky/sunpath_small.jpg" href="/content/GHPC/Sky/sunpath.png" inline=1 w=702 h=394 %}{% endcapture %}
-{% capture f %}Sunpath over the course of a year{% endcapture %}
+{% capture f %}Sun path over the course of a year{% endcapture %}
 {% include figure.html content=c footer=f %}
 
 {% capture c %}{% include image.html src="/content/GHPC/Sky/moon2.gif" inline=1 w=615 h=122 %}{% endcapture %}

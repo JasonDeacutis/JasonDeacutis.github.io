@@ -3,13 +3,13 @@
     <link rel="stylesheet" href="subject.css">
 </head>
 
-# Guassian Splatting
+# Gaussian Splatting
 Giving the [latest trend in computer graphics](https://youtu.be/HVv_IQKlafQ?si=xQDyn9URuIj2uI9l) a try.
 
 <center>
     <figure>
         <a href="/content/Scans/3DGS/ah-1f.gif" title="Enlarge"><img src="/content/Scans/3DGS/ah-1f.gif"></a>
-        <figcaption>AH-1F Guassian Splat (200 Images in Polycam)</figcaption>
+        <figcaption>AH-1F Gaussian Splat (200 Images in Polycam)</figcaption>
     </figure>
 </center>
 <div class="media_grid">
@@ -24,7 +24,7 @@ Giving the [latest trend in computer graphics](https://youtu.be/HVv_IQKlafQ?si=x
 <center>
     <figure>
         <a href="/content/Scans/3DGS/oh-6a.gif" title="Enlarge"><img src="/content/Scans/3DGS/oh-6a.gif"></a>
-        <figcaption>OH-6A Guassian Splat (200 Images in Polycam)</figcaption>
+        <figcaption>OH-6A Gaussian Splat (200 Images in Polycam)</figcaption>
     </figure>
 </center>
 <div class="media_grid">

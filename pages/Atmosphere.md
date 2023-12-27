@@ -52,5 +52,5 @@ Optionally supports casting shadows onto the atmosphere.
 
 <figure>
     <img src="/content/Shader/Atmosphere/scatter_diagram.png">
-    <figcaption>Along each pixel's ray, multiple points are evaluated to see how much light they recieve. These are combined to determine the final pixel color.</figcaption>
+    <figcaption>Along each pixel's ray, multiple points are evaluated to see how much light they receive. These are combined to determine the final pixel color.</figcaption>
 </figure>

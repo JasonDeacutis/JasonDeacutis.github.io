@@ -10,7 +10,7 @@ I'm more of a programmer than an artist, but I dabble when I can.
 Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
 {% include image.html src="/content/Art/an-prc-117g_small.jpg" href="/content/Art/an-prc-117g.png" style="width:100%; aspect-ratio: 16/9;" %}
 
-### Hardsurface Modeling
+### Hard Surface Modeling
 <div class="media_grid">
     <figure>
         <a href="/content/Art/M2 .50 Cal/m2_big_pew.png"><img src="/content/Art/M2 .50 Cal/m2_big_pew.png" style="filter: brightness(1.5)"></a>

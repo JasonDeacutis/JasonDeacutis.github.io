@@ -21,7 +21,7 @@ I believe there to be many CPU optimizations that could still be performed.
     </figure>
     <figure>
         <img src="/content/Icoplanet/tree_step.gif">
-        <figcaption>During each iteration, the leaves of the tree are evluated to determine if they should be subdivided.</figcaption>
+        <figcaption>During each iteration, the leaves of the tree are evaluated to determine if they should be subdivided.</figcaption>
     </figure>
     <figure>
         <a href="/content/Icoplanet/frustum_cull_far.png"><img src="/content/Icoplanet/frustum_cull_far.jpg"></a>
