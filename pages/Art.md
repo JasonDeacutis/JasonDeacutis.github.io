@@ -6,8 +6,8 @@
 # 3D Art
 I'm more of a programmer than an artist, but I dabble when I can.
 
-### [AN-PRC-117G](content/Art/AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](content/Art/AN-PRC-117G_FALCON_III_shield.jpg)
-Fully procedurally modeled & textured using [Blender](https://www.blender.org/features/), with some artistic liberties taken.
+### [AN-PRC-117G](/content/Art/AN-PRC-117-Harris-Falcon-3.jpg) Radio + [Display Shield](/content/Art/AN-PRC-117G_FALCON_III_shield.jpg)
+Fully procedurally modeled & textured using [Blender](https://www.blender.org/), with some artistic liberties taken.
 {% include image.html src="/content/Art/an-prc-117g_small.jpg" href="/content/Art/an-prc-117g.png" style="width:100%; aspect-ratio: 16/9;" %}
 
 ### Hard Surface Modeling
@@ -22,7 +22,7 @@ Fully procedurally modeled & textured using [Blender](https://www.blender.org/fe
     </figure>
     <figure>
         <a href="/content/Art/M2 .50 Cal/plasticity.png"><img src="/content/Art/M2 .50 Cal/plasticity.png"></a>
-        <figcaption>Made in Plasticity</figcaption>
+        <figcaption>Made in <a href="https://www.plasticity.xyz/">Plasticity</a></figcaption>
     </figure>
     <figure>
         <a href="/content/Art/Airsoft Reflex/r3.png"><img src="/content/Art/Airsoft Reflex/r3.png"></a>
@@ -34,23 +34,51 @@ Fully procedurally modeled & textured using [Blender](https://www.blender.org/fe
     </figure>
     <figure>
         <a href="/content/Art/Airsoft Reflex/r2.png"><img src="/content/Art/Airsoft Reflex/r2.png" style="filter: brightness(1.5)"></a>
-        <figcaption>Lens was accurate enough to project the reticle into the distance.</figcaption>
+        <figcaption>Red dot projected in the distance via lens geometry alone.</figcaption>
     </figure>
     <figure>
         <a href="/content/Art/Airsoft Reflex/plasticity.png"><img src="/content/Art/Airsoft Reflex/plasticity_small.jpg"></a>
         <figcaption>Made in Plasticity</figcaption>
     </figure>
     <figure>
-        <a href="/content/Art/WM.jpg"><img src="/content/Art/WM_small.jpg"></a>
-        <figcaption><a href="https://www.world-machine.com/">World Machine</a> Terrain</figcaption>
+        <a href="/content/Art/M240/1.png"><img src="/content/Art/M240/1.jpg"></a>
+        <figcaption>M240 Machine Gun</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/M240/2.png"><img src="/content/Art/M240/2.jpg"></a>
+        <figcaption></figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/M240/3.png"><img src="/content/Art/M240/3.jpg"></a>
+        <figcaption>Underneat the upper handguard</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/Tunguska/1.png"><img src="/content/Art/Tunguska/1.jpg"></a>
+        <figcaption>Russian 2K22 Tunguska SPAA</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/Tunguska/2.png"><img src="/content/Art/Tunguska/2.jpg"></a>
+        <figcaption>Individual track links</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/Tunguska/3.png"><img src="/content/Art/Tunguska/3.jpg"></a>
+        <figcaption></figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/Tunguska/4.png"><img src="/content/Art/Tunguska/4.jpg"></a>
+        <figcaption>Search Radar (right) and Track Radar (left)</figcaption>
     </figure>
     <figure>
         <a href="/content/Art/T-72_F.png"><img src="/content/Art/T-72_F.jpg"></a>
-        <figcaption>T-72</figcaption>
+        <figcaption>Low Poly T-72 (Targeting Mobile)</figcaption>
     </figure>
     <figure>
         <a href="/content/Art/T-72_ERA_F.png"><img src="/content/Art/T-72_ERA_F.jpg"></a>
         <figcaption>ERA Variant</figcaption>
+    </figure>
+    <figure>
+        <a href="/content/Art/WM.jpg"><img src="/content/Art/WM_small.jpg"></a>
+        <figcaption><a href="https://www.world-machine.com/">World Machine</a> Terrain</figcaption>
     </figure>
 </div>
 
